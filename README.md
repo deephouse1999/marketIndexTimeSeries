@@ -11,6 +11,10 @@ The dashboard is currently deployed at:
 
 <https://deephouse1999.shinyapps.io/us_econ_dashboard/>
 
+The timeseries app is currently deployed at:
+
+<https://deephouse1999.shinyapps.io/market_timeseries/>
+
 ## Run locally
 
 Dashboard:
