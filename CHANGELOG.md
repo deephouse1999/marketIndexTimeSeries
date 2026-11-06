@@ -7,6 +7,7 @@
 - Added lazy DRAM/Flash views under Semiconductor & Korea Link and a Physical Indicators Series Explorer group with explicit PPI and ETF-proxy interpretation warnings.
 - Integrated physical builds into Gate 5 publication and deployment; Gate 4.5 validation passed 18/18, browser checks 11/11, existing UI remediation 9/9, legacy outputs 15/15, and worst-case session RSS 415MB.
 - Remediated the first independent Gate 4.5 audit: ECOS `source_updated_at` is now explicitly unavailable instead of using the collector clock; PPI lag output is labeled reference-month exploratory; BWET oil-regime relative performance now subtracts XLE; integrated validation passes 21/21 and both Gate 5 staging paths pass without publication.
+- Deployed Gate 4.5 as shinyapps.io bundle `12787559`; public smoke passed 9/9, release baseline commit `e001a21` was pushed to `origin/main`, and the second independent read-only re-audit approved closure and release.
 - Fixed Series Explorer Raw Source Level rendering by replacing the broken faceted ggplotly conversion with direct Plotly line panels and correcting raw-column vector selection.
 - Fixed the Monthly Return Distribution DT failure caused by the invalid `row.names` argument; the BAMLH0A0HYM2 regression case now passes with 526 varying raw observations and a rendered monthly table.
 - Remediated the reviewed UI: documented cyclical/defensive sector membership and calculation meaning; labeled the SOX Overview as a current five-year common-start return comparison.

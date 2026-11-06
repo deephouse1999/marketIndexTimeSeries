@@ -17,7 +17,10 @@ BWET_PROXY_SEMANTICS_PASS
 UI_VISIBILITY_PASS
 SCHEDULE_INCLUSION_PASS
 GATE_4_5_SELF_VALIDATION_PASS
-INDEPENDENT_REAUDIT_REQUIRED
+GATE_4_5_SECOND_INDEPENDENT_REAUDIT_PASS
+GIT_REPRODUCIBILITY_PASS
+GATE_4_5_CLOSED_PASS
+RELEASE_APPROVED
 ```
 
 ## Inventory
@@ -37,6 +40,8 @@ INDEPENDENT_REAUDIT_REQUIRED
 - Browser checks: 11/11; Physical Indicators visible render 0.846s.
 - Integrated performance: cold max 0.077s; warm p95 0.241s; filter p95 0.083s; startup max 3.163s; RSS 413.4MB.
 - The Shiny session reads local FST files only; collection remains in scheduled batch scripts.
+- Public shinyapps.io bundle `12787559` passed 9/9 direct smoke checks.
+- Release commit `e001a21a15b51e81f84ffd809d84c90512e51503` matched `origin/main` during the independent re-audit.
 
 ## Files
 
@@ -45,3 +50,5 @@ INDEPENDENT_REAUDIT_REQUIRED
 - `available_at_validation.csv`
 - `ui_browser_checks.csv`
 - `gate4_5_validation_checks.csv`
+- `PUBLIC_URL_SMOKE.md`
+- `INDEPENDENT_REAUDIT.md`

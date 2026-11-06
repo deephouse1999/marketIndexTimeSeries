@@ -9,8 +9,14 @@
 - Full performance evidence was regenerated under the unchanged thresholds.
 - Gate 5 foundation tests passed 7/7. US and KR `--validate-only` staging runs both ended `STAGING_VALIDATED_NO_PUBLICATION` with the physical derived file in the publication set.
 
-## Pending at this record point
+## Closure
 
-- Deploy the remediated bundle to shinyapps.io and perform public URL smoke verification.
-- Obtain independent re-audit approval.
-- Create the Git release baseline requested by the repository workflow.
+- Deployed remediated shinyapps.io bundle `12787559`; public URL smoke passed 9/9.
+- Second independent read-only re-audit passed with no blocking findings.
+- Release baseline commit `e001a21a15b51e81f84ffd809d84c90512e51503` was pushed to `origin/main` and independently matched.
+
+```text
+GATE_4_5_SECOND_INDEPENDENT_REAUDIT_PASS
+GATE_4_5_CLOSED_PASS
+RELEASE_APPROVED
+```

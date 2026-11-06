@@ -4,7 +4,7 @@ Validated: 2026-11-05 KST
 
 ## Gate 4.5 Physical Indicators Addendum
 
-**Result: `GATE_4_5_SELF_VALIDATION_PASS / INDEPENDENT_REAUDIT_REQUIRED`**
+**Result: `GATE_4_5_CLOSED_PASS / RELEASE_APPROVED`**
 
 - Official ECOS readback verified DRAM `404Y016/30911201AA` and Flash Memory `404Y016/30911202AA`, monthly, `2020=100`.
 - Raw inventory: DRAM 381 rows, Flash 261 rows, BWET 882 rows; duplicate source/series/date keys are zero.
@@ -12,6 +12,8 @@ Validated: 2026-11-05 KST
 - Derived store contains 3,967 rows with six PPI measures, 104 monthly lead/lag rows, and eleven BWET metrics.
 - Local browser validation passed 11/11, including both visible PPI lines, metadata/status text, Physical Indicators filtering, BWET warning, and Raw Source line rendering.
 - Existing regression passed: 15 legacy outputs, Series Explorer plots 2/2, UI remediation 9/9; startup 1.857s and RSS 415MB after lazy physical loading.
+- Public bundle `12787559` passed 9/9 direct smoke checks; release baseline `e001a21a15b51e81f84ffd809d84c90512e51503` matched `origin/main`.
+- The second independent read-only re-audit closed all first-audit findings and approved release.
 - Evidence: `docs/gate4_5/GATE4_5_VALIDATION_REPORT.md`.
 
 Decision:
@@ -26,7 +28,10 @@ BWET_PROXY_SEMANTICS_PASS
 UI_VISIBILITY_PASS
 SCHEDULE_INCLUSION_PASS
 GATE_4_5_SELF_VALIDATION_PASS
-INDEPENDENT_REAUDIT_REQUIRED
+GATE_4_5_SECOND_INDEPENDENT_REAUDIT_PASS
+GIT_REPRODUCIBILITY_PASS
+GATE_4_5_CLOSED_PASS
+RELEASE_APPROVED
 ```
 
 ## Gate 6 Closure

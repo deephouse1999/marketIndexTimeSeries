@@ -8,7 +8,7 @@
 | Gate 2 | ECOS collector and storage integration | PASS | `docs/gate2/GATE2_VALIDATION_REPORT.md` |
 | Gate 3 | Korea Rates & Funding UI and derived rate analysis | PASS | 28/28 checks plus cold/warm/filter browser evidence passed |
 | Gate 4 | SOX constituent history, collection, value chain, and contribution analysis | CLOSED PASS | Independent second re-audit passed; Gate 5 approved |
-| Gate 4.5 | ECOS memory PPI and BWET physical-indicator proxy integration | CLOSED PASS | 18/18 validation and 11/11 browser checks; independent audit ready |
+| Gate 4.5 | ECOS memory PPI and BWET physical-indicator proxy integration | CLOSED PASS | 21/21 validation, public smoke 9/9, second independent re-audit passed |
 | Gate 5 | New York/Seoul scheduled collection and atomic publication | CLOSED PASS | 30/30 validation; live US/KR batches and scheduler readback passed |
 | Gate 6 | Regression, performance validation, release, and handoff | CLOSED PASS | 21/21 final validation; production release approved |
 
@@ -49,7 +49,8 @@
 - Added PPI level/change/streak and monthly lead/lag analysis plus BWET returns, market correlations, oil regimes, volatility, and drawdown.
 - Added lazy physical-indicator screens and exact interpretation warnings without creating a new large top-level tab.
 - Integrated the collectors and derived build with the existing Seoul/New York Gate 5 batch and atomic publication flow.
-- Passed 18/18 contract validation, 11/11 browser checks, and existing legacy/UI regressions.
+- Passed 21/21 integrated validation, 11/11 browser checks, 9/9 public smoke checks, and existing legacy/UI regressions.
+- Second independent read-only re-audit approved release; commit `e001a21` matched `origin/main`.
 
 ## Existing Complete Features
 
@@ -59,6 +60,5 @@
 
 ## Follow-up
 
-- Complete the independent read-only Gate 4.5 audit and remediate any Critical or Major finding before public release.
 - Review the unsupported Yahoo TOPIX symbol currently logged as `empty_new_series`.
 - Add licensed official VLCC route freight data only as a separate source and series; never merge it into BWET history.
