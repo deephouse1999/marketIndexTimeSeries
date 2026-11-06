@@ -1,0 +1,29 @@
+check,observed,expected,status
+official_membership_count,30,30,PASS
+membership_source,NASDAQ_OFFICIAL,NASDAQ_OFFICIAL,PASS
+weight_source,SOXQ_PROXY,SOXQ_PROXY,PASS
+proxy_weight_sum,0.99979655,0.99 to 1.01,PASS
+weight_snapshot_history,2026-11-03;2026-11-04,2026-11-03;2026-11-04,PASS
+strict_prior_weight_usage,0,0,PASS
+raw_rows,207906,> 0,PASS
+raw_series,30,30,PASS
+raw_duplicate_keys,0,0,PASS
+required_series_coverage,32,32,PASS
+derived_rows,86716,> 0,PASS
+derived_duplicate_keys,0,0,PASS
+no_membership_lookahead,2026-11-05,2026-11-05,PASS
+adjusted_close_policy,0,0,PASS
+collector_ownership_gate4_only,FALSE,FALSE,PASS
+published_nonpositive_adjusted_prices,0,0,PASS
+published_extreme_daily_returns,0,0,PASS
+latest_us_close_alignment_policy,57394,> 0,PASS
+complete_member_aggregate_only,30,30,PASS
+incomplete_dates_not_published,0,0,PASS
+overview_common_period,1,1,PASS
+overview_exact_100_baseline,0,0,PASS
+cold_render_max_seconds,0.0696089267730713,<= 2,PASS
+warm_render_p95_seconds,0.288601493835449,<= 2,PASS
+filter_response_p95_seconds,0.0790547728538513,<= 2,PASS
+app_startup_max_seconds,3.1547734,<= 5,PASS
+session_memory_mb,363.796875,<= 500,PASS
+app_time_api_calls,0,0,PASS

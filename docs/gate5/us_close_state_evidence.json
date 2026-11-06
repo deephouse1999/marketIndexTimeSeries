@@ -1,0 +1,11 @@
+{
+  "batch_id": "US_CLOSE_20261106T080500",
+  "expected_session": "2026-11-05",
+  "status": "PASS",
+  "configured_series": 154,
+  "updated_series": 115,
+  "no_new_data_series": 22,
+  "pending_source_count": 17,
+  "missing_critical": [],
+  "published": true
+}

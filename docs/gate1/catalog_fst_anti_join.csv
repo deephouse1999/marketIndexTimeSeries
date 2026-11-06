@@ -1,0 +1,15 @@
+source,series_id,display_name,collect_flag,default_visible,active,classification,rationale
+YAHOO,^TOPX,Topix,FALSE,FALSE,TRUE,INTENTIONALLY_CATALOG_ONLY,Unsupported Yahoo TOPIX symbol retained for mapping; collection and default display disabled
+FRED,DFEDTARL,Federal Funds Target Range Lower Limit,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+FRED,DFII10,US 10Y Real Treasury Yield,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+FRED,T10YIE,US 10Y Breakeven Inflation Rate,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+FRED,DFF,Effective Federal Funds Rate,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+FRED,SOFR,Secured Overnight Financing Rate,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,SHY,iShares 1-3 Year Treasury Bond ETF,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,IEF,iShares 7-10 Year Treasury Bond ETF,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,TLT,iShares 20+ Year Treasury Bond ETF,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,LQD,iShares Investment Grade Corporate Bond ETF,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,HYG,iShares High Yield Corporate Bond ETF,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,SOXQ,Invesco PHLX Semiconductor ETF,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,005930.KS,Samsung Electronics,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate
+YAHOO,HG=F,Copper Futures,TRUE,TRUE,TRUE,EXPECTED_PENDING_COLLECTION,Registered in Gate 1; collection begins in the applicable later gate

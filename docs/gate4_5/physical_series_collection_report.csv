@@ -1,0 +1,4 @@
+source,series_id,rows,start_date,end_date,close_non_missing,adjusted_non_missing,duplicate_keys,quality_status
+ECOS,KR_DRAM_PPI,381,1995-01-01,2026-09-01,381,NA,0,VERIFIED_SOURCE
+ECOS,KR_FLASH_MEMORY_PPI,261,2005-01-01,2026-09-01,261,NA,0,VERIFIED_SOURCE
+YAHOO,BWET_VLCC_PROXY,882,2023-05-03,2026-11-05,882,882,0,SOURCE_MARKET_CLOSE

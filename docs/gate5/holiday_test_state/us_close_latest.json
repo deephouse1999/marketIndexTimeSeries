@@ -1,0 +1,21 @@
+{
+  "batch_id": "US_CLOSE_20260707T070500",
+  "expected_session": "2026-07-06",
+  "started_at": "2026-07-07 07:05:00 KST",
+  "completed_at": "2026-11-06 16:23:57 KST",
+  "status": "US_MARKET_HOLIDAY_NOOP",
+  "configured_series": 0,
+  "updated_series": 0,
+  "no_new_data_series": 0,
+  "missing_critical": [],
+  "pending_source": [],
+  "published": false,
+  "schedule": {
+    "eligible": true,
+    "timezone": "America/New_York",
+    "local_time": "2026-07-06 18:05:00 EDT",
+    "weekday": 1,
+    "target": "18:05",
+    "new_york_dst": true
+  }
+}

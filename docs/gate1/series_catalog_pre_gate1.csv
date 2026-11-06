@@ -1,0 +1,104 @@
+source,series_id,display_name,display_name_ko,series_cls,series_group,sector,industry,region,currency,benchmark_series,price_policy,active,display_order,notes
+FRED,DGS1,US 1Y Treasury Rate,미국 1Y 금리,rate,rates,NA,NA,US,USD,,close,TRUE,101,Core macro controls
+FRED,DGS2,US 2Y Treasury Rate,미국 2Y 금리,rate,rates,NA,NA,US,USD,,close,TRUE,102,Core macro controls
+FRED,DGS5,US 5Y Treasury Rate,미국 5Y 금리,rate,rates,NA,NA,US,USD,,close,TRUE,103,Core macro controls
+FRED,DGS10,US 10Y Treasury Rate,미국 10Y 금리,rate,rates,NA,NA,US,USD,,close,TRUE,104,Core macro controls
+FRED,DGS30,US 30Y Treasury Rate,미국 30Y 금리,rate,rates,NA,NA,US,USD,,close,TRUE,105,Core macro controls
+FRED,T10Y2Y,10Y-2Y Spread,10Y-2Y 스프레드,rate,rates,NA,NA,US,USD,,close,TRUE,106,Yield curve indicator
+FRED,FEDFUNDS,Federal Funds Rate,연방기금금리,rate,rates,NA,NA,US,USD,,close,TRUE,107,Policy rate
+FRED,DFEDTAR,Target Rate Upper Bound,연준 타겟 금리 상한,rate,policy,NA,NA,US,USD,,close,TRUE,108,Federal Funds target range
+FRED,DFEDTARU,Target Rate Lower Bound,연준 타겟 금리 하한,rate,policy,NA,NA,US,USD,,close,TRUE,109,Federal Funds target range
+FRED,BAMLC0A1CAAAEY,US AAA Spread,미국 BBB/AAA 신용 스프레드,credit,credit,NA,NA,US,USD,,close,TRUE,110,Corporate credit indicator
+FRED,BAMLC0A3CAEY,US Baa Spread,미국 BAA 스프레드,credit,credit,NA,NA,US,USD,,close,TRUE,111,Corporate credit indicator
+FRED,BAMLC0A2CAAEY,US AA Spread,미국 AA 스프레드,credit,credit,NA,NA,US,USD,,close,TRUE,112,Corporate credit indicator
+FRED,BAMLC0A4CBBBEY,US BBB Spread,미국 BBB 스프레드,credit,credit,NA,NA,US,USD,,close,TRUE,113,Corporate credit indicator
+FRED,BAMLH0A0HYM2EY,ICE BofA BBB Spread,미국 BofA BBB 신용 스프레드,credit,credit,NA,NA,US,USD,,close,TRUE,114,Corporate credit indicator
+FRED,BAMLH0A0HYM2,US High Yield OAS,미국 하이일드 옵션조정 스프레드,credit,credit,NA,NA,US,USD,,close,TRUE,114,ICE BofA US High Yield option-adjusted spread; FRED rolling 3-year history
+FRED,DJIA,Dow Jones Industrial Average,다우존스 지수,broad_index,indices,NA,NA,US,USD,,close,TRUE,115,Market broad index
+FRED,NASDAQCOM,NASDAQ Composite,NASDAQ 지수,broad_index,indices,NA,NA,US,USD,,close,TRUE,116,Market broad index
+FRED,SP500,S&P 500,S&P 500 지수,broad_index,indices,NA,NA,US,USD,,close,TRUE,117,Market broad index
+FRED,VIXCLS,VIX,VIX 지수,broad_index,indices,NA,NA,US,USD,,close,TRUE,118,Volatility index
+FRED,DEXKOUS,KRW/USD,원달러 환율,forex,fx,NA,NA,KRW/USD,USD,,close,TRUE,119,FX
+FRED,DEXJPUS,JPY/USD,엔달러 환율,forex,fx,NA,NA,JPY/USD,USD,,close,TRUE,120,FX
+FRED,DEXCHUS,CNY/USD,중국위안 환율,forex,fx,NA,NA,CNY/USD,USD,,close,TRUE,121,FX
+FRED,DEXUSEU,EUR/USD,유로달러 환율,forex,fx,NA,NA,EUR/USD,USD,,close,TRUE,122,FX
+FRED,DEXUSUK,GBP/USD,파운드달러 환율,forex,fx,NA,NA,GBP/USD,USD,,close,TRUE,123,FX
+FRED,GDP,GDP,GDP,gdp,macro,NA,NA,US,USD,,close,TRUE,124,Macro
+FRED,GDPC1,Real GDP,실질 GDP,gdp,macro,NA,NA,US,USD,,close,TRUE,125,Macro
+FRED,B935RC1Q027SBEA,Business Inventories,기업재고,investment,macro,NA,NA,US,USD,,close,TRUE,126,Investment flow
+FRED,CPIAUCSL,CPI YoY,CPI 전년동월비,general_inflation,macro,NA,NA,US,USD,,close,TRUE,127,Inflation;display_transform=yoy
+FRED,CPILFESL,Core CPI YoY,근원 CPI 전년동월비,general_inflation,macro,NA,NA,US,USD,,close,TRUE,128,Inflation;display_transform=yoy
+FRED,PCEPI,PCE,PCE 지수,inflation,macro,NA,NA,US,USD,,close,TRUE,129,Inflation
+FRED,PCEPILFE,Core PCE,근원 PCE,general_inflation,macro,NA,NA,US,USD,,close,TRUE,130,Inflation
+FRED,PPIACO,PPI YoY,PPI 전년동월비,inflation,macro,NA,NA,US,USD,,close,TRUE,131,Inflation;display_transform=yoy
+FRED,WPSFD4131,Wage Price Index,임금지수,inflation,macro,NA,NA,US,USD,,close,TRUE,132,Labor cost
+FRED,UNRATE,Unemployment Rate,실업률,employment,labor,NA,NA,US,USD,,close,TRUE,133,Labor
+FRED,ICSA,Initial Claims,주간 신규 실업수당 청구건,employment,labor,NA,NA,US,USD,,close,TRUE,134,Labor
+FRED,PAYEMS,Nonfarm Payrolls,비농업 고용,employment,labor,NA,NA,US,USD,,close,TRUE,135,Labor
+FRED,WTISPLC,Commodity Spot Price Index,원자재 가격,commodity,macro,NA,NA,US,USD,,close,TRUE,136,Commodity
+FRED,FYFSD,Federal Debt,연방부채,gvt_debt,macro,NA,NA,US,USD,,close,TRUE,137,Fiscal
+FRED,MVGFD027MNFRBDAL,Federal Debt to GDP,연방부채/GDP,gvt_debt,macro,NA,NA,US,USD,,close,TRUE,138,Fiscal
+FRED,PNFIC1,Real Nonresidential Fixed Investment,실질 민간 비주거 고정투자,investment,investment,NA,NA,US,USD,,close,TRUE,139,Broad business investment;frequency=quarterly
+FRED,A679RC1Q027SBEA,AI Capex Proxy,AI CAPEX 프록시(정보처리 장비·소프트웨어 투자),investment,investment,Information Technology,NA,US,USD,,close,TRUE,140,Information processing equipment and software investment;frequency=quarterly;proxy_role=ai_capex
+FRED,IPG3344S,Semiconductor Production Index,반도체·전자부품 산업생산,investment,investment,Semiconductors,NA,US,USD,,close,TRUE,141,Semiconductor and electronic component industrial production;frequency=monthly;proxy_role=ai_supply
+FRED,NEWORDER,Core Capital Goods New Orders,핵심 자본재 신규주문,investment,investment,NA,NA,US,USD,,close,TRUE,142,Nondefense capital goods excluding aircraft;frequency=monthly;proxy_role=capex_lead
+YAHOO,2YY=F,2Y US Treasury Note,미국 2년 선물율,rate,broad,NA,NA,US,USD,,adjusted,TRUE,1,Early futures curve
+YAHOO,^TNX,10Y US Treasury Yield,미국 10년 국채금리,rate,broad,NA,NA,US,USD,,adjusted,TRUE,2,Rate curve node
+YAHOO,^TYX,30Y US Treasury Yield,미국 30년 국채금리,rate,broad,NA,NA,US,USD,,adjusted,TRUE,3,Rate curve node
+YAHOO,AGGG.L,AGGG ETF,AGGG 장기채 ETF,broad_etf,etf,NA,NA,GB,USD,,adjusted,TRUE,4,Global aggregate bond proxy
+YAHOO,^DJI,Dow Jones Industrial Average,다우존스 지수,broad_index,indices,NA,NA,US,USD,,adjusted,TRUE,5,US broad index
+YAHOO,^GSPC,S&P 500,S&P 500 지수,broad_index,indices,NA,NA,US,USD,,adjusted,TRUE,6,US broad index
+YAHOO,^IXIC,Nasdaq Composite,Nasdaq 지수,broad_index,indices,NA,NA,US,USD,,adjusted,TRUE,7,US broad index
+YAHOO,SPY,S&P 500 ETF,SPY(국내대체 ETF),broad_etf,etf,NA,NA,US,USD,,adjusted,TRUE,8,US market benchmark
+YAHOO,QQQ,Nasdaq ETF,QQQ(나스닥 ETF),broad_etf,etf,NA,NA,US,USD,,adjusted,TRUE,9,US technology growth proxy
+YAHOO,^VIX,VIX,VIX 지수,broad_etf,volatility,NA,NA,US,USD,,adjusted,TRUE,10,Volatility
+YAHOO,^TOPX,Topix,TOPIX 지수,broad_index,indices,NA,NA,JP,JPY,,adjusted,TRUE,11,Japan broad index
+YAHOO,^FTSE,FTSE 100,FTSE100,broad_index,indices,NA,NA,GB,GBP,,adjusted,TRUE,12,Europe index
+YAHOO,^GDAXI,DAX,DAX 지수,broad_index,indices,NA,NA,EU,EUR,,adjusted,TRUE,13,Europe index
+YAHOO,^HSI,Hang Seng,HANG SENG,broad_index,indices,NA,NA,HK,HKD,,adjusted,TRUE,14,Asia index
+YAHOO,^KS11,KOSPI,KOSPI 지수,broad_index,indices,NA,NA,KR,KRW,SOXX,adjusted,TRUE,15,Korea index;analysis_group=semiconductor_korea;link_role=kr_market
+YAHOO,^BVSP,Bovespa Index,브라질 보베스파 지수,broad_index,indices,NA,NA,BR,BRL,,adjusted,TRUE,15,Brazil broad index
+YAHOO,XLK,XLK(Technology),섹터:IT,sector_etf,sectors,Information Technology,NA,US,USD,SPY,adjusted,TRUE,16,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLC,XLC(Communication),섹터:Comm Services,sector_etf,sectors,Communication Services,NA,US,USD,SPY,adjusted,TRUE,17,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLY,XLY(Consumer Discretionary),섹터:경기소비재,sector_etf,sectors,Consumer Discretionary,NA,US,USD,SPY,adjusted,TRUE,18,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLP,XLP(Consumer Staples),섹터:필수소비재,sector_etf,sectors,Consumer Staples,NA,US,USD,SPY,adjusted,TRUE,19,Sector ETF;rotation_bucket=defensive
+YAHOO,XLE,XLE(Energy),섹터:에너지,sector_etf,sectors,Energy,NA,US,USD,SPY,adjusted,TRUE,20,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLF,XLF(Financials),섹터:금융,sector_etf,sectors,Financials,NA,US,USD,SPY,adjusted,TRUE,21,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLV,XLV(Health Care),섹터:헬스케어,sector_etf,sectors,Health Care,NA,US,USD,SPY,adjusted,TRUE,22,Sector ETF;rotation_bucket=defensive
+YAHOO,XLI,XLI(Industrials),섹터:산업재,sector_etf,sectors,Industrials,NA,US,USD,SPY,adjusted,TRUE,23,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLB,XLB(Materials),섹터:소재,sector_etf,sectors,Materials,NA,US,USD,SPY,adjusted,TRUE,24,Sector ETF;rotation_bucket=cyclical
+YAHOO,XLU,XLU(Utilities),섹터:유틸리티,sector_etf,sectors,Utilities,NA,US,USD,SPY,adjusted,TRUE,25,Sector ETF;rotation_bucket=defensive
+YAHOO,XLRE,XLRE(Real Estate),섹터:부동산,sector_etf,sectors,Real Estate,NA,US,USD,SPY,adjusted,TRUE,26,Sector ETF;rotation_bucket=rate_sensitive
+YAHOO,EWY,MSCI Korea,EWY ETF, country_etf,etf,NA,NA,KR,USD,SOXX,adjusted,TRUE,27,Korea proxy;analysis_group=semiconductor_korea;link_role=us_korea_proxy
+YAHOO,ACWI,MSCI ACWI,ACWI ETF,global_etf,etf,NA,NA,GLOBAL,USD,,adjusted,TRUE,28,Global equities
+YAHOO,URTH,MSCI World,URTH ETF,global_etf,etf,NA,NA,GLOBAL,USD,,adjusted,TRUE,29,Developed ex-US plus US
+YAHOO,EEM,MSCI Emerging Markets,EEM ETF,emerging_market_etf,etf,NA,NA,GLOBAL,USD,,adjusted,TRUE,30,Emerging markets
+YAHOO,USDKRW=X,USD/KRW,USD/KRW,forex,fx,NA,NA,KRW,USD,,adjusted,TRUE,31,Korea FX
+YAHOO,USDJPY=X,USD/JPY,USD/JPY,forex,fx,NA,NA,JPY,USD,,adjusted,TRUE,32,Japan FX
+YAHOO,USDCNY=X,USD/CNY,USD/CNY,forex,fx,NA,NA,CNY,USD,,adjusted,TRUE,33,China FX
+YAHOO,USDEUR=X,USD/EUR,USD/EUR,forex,fx,NA,NA,EUR,USD,,adjusted,TRUE,34,Europe FX
+YAHOO,USDGBP=X,USD/GBP,USD/GBP,forex,fx,NA,NA,GBP,USD,,adjusted,TRUE,35,UK FX
+YAHOO,DX-Y.NYB,DXY,달러 인덱스,forex,fx,NA,NA,US,USD,,adjusted,TRUE,36,Dollar strength
+YAHOO,^SOX,PHLX Semiconductor Index,필라델피아 반도체 지수,broad_index,indices,Semiconductors,NA,US,USD,SOXX,adjusted,TRUE,37,Semiconductor index
+YAHOO,SOXX,SOXX ETF,SOXX(반도체),industry_etf,industries,Semiconductors,NA,US,USD,SOXX,adjusted,TRUE,37,Semiconductor;analysis_group=semiconductor_korea;link_role=semi_benchmark
+YAHOO,XSD,XSD ETF,XSD(소형반도체),industry_etf,industries,Semiconductors,NA,US,USD,SOXX,adjusted,TRUE,38,Semiconductor;analysis_group=semiconductor_korea;link_role=semi_breadth
+YAHOO,IGV,IGV ETF,IGV(소프트웨어),industry_etf,industries,Software & Cloud,NA,US,USD,,adjusted,TRUE,39,Software/Cloud
+YAHOO,KRE,KRE ETF,KRE(지역은행),industry_etf,industries,Regional Banks,NA,US,USD,,adjusted,TRUE,40,Banking
+YAHOO,XHB,XHB ETF,XHB(주택),industry_etf,industries,Housing,NA,US,USD,,adjusted,TRUE,41,Housing sensitivity
+YAHOO,XOP,XOP ETF,XOP(유가증권),industry_etf,industries,Energy,NA,US,USD,,adjusted,TRUE,42,Oil & gas
+YAHOO,XAR,XAR ETF,XAR(방산),industry_etf,industries,Aerospace & Defense,NA,US,USD,,adjusted,TRUE,43,Defense
+YAHOO,AAPL,Apple,애플,legacy_stock,legacy,Technology,NA,US,USD,,adjusted,TRUE,1001,Legacy tracking period
+YAHOO,GOOG,Alphabet,알파벳,legacy_stock,legacy,Technology,NA,US,USD,,adjusted,TRUE,1002,Legacy tracking period
+YAHOO,TSLA,Tesla,테슬라,legacy_stock,legacy,Auto,NA,US,USD,,adjusted,TRUE,1003,Legacy tracking period
+YAHOO,META,Meta,메타,legacy_stock,legacy,Technology,NA,US,USD,,adjusted,TRUE,1004,Legacy tracking period
+YAHOO,LLY,Eli Lilly,Lilly,legacy_stock,legacy,Healthcare,NA,US,USD,,adjusted,TRUE,1005,Legacy tracking period
+YAHOO,NVDA,NVIDIA,엔비디아,signal_stock,signal,Semiconductors,NA,US,USD,SOXX,adjusted,TRUE,44,Semiconductor signal;analysis_group=semiconductor_korea;link_role=ai_signal
+YAHOO,MU,Micron,마이크론,signal_stock,signal,Semiconductors,NA,US,USD,SOXX,adjusted,TRUE,45,Semiconductor signal;analysis_group=semiconductor_korea;link_role=memory_signal
+YAHOO,SKHY,SK hynix,SK하이닉스(미국ADR),signal_stock,signal,Semiconductors,NA,US,USD,SOXX,adjusted,TRUE,46,Korea signal stock;analysis_group=semiconductor_korea;link_role=us_hynix
+YAHOO,000660.KS,SK hynix KR,SK하이닉스,signal_stock,signal,Semiconductors,NA,KR,KRW,SOXX,close,TRUE,47,Korea signal stock (spot);analysis_group=semiconductor_korea;link_role=kr_hynix
+YAHOO,ZC=F,Corn,Corn 선물,commodity,commodity,NA,NA,US,USD,,adjusted,TRUE,501,Commodities
+YAHOO,HE=F,Lean Hogs,Hogs 선물,commodity,commodity,NA,NA,US,USD,,adjusted,TRUE,502,Commodities
+YAHOO,CL=F,WTI Crude,WTI 원유,commodity,commodity,NA,NA,US,USD,,adjusted,TRUE,503,Commodities
+YAHOO,NG=F,Natural Gas,천연가스,commodity,commodity,NA,NA,US,USD,,adjusted,TRUE,504,Commodities
+YAHOO,GC=F,Gold,금,commodity,commodity,NA,NA,US,USD,,adjusted,TRUE,505,Commodities
+YAHOO,BTC-USD,Bitcoin,비트코인,commodity,commodity,NA,NA,US,USD,,adjusted,TRUE,506,Digital assets

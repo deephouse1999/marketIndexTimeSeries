@@ -1,0 +1,7 @@
+check,actual,expected,result
+startup_seconds,1.5652480125427246,<=5,PASS
+session_memory_mb,413.4453125,<=500,PASS
+series_explorer_cache_loaded,1,TRUE,PASS
+sox_initial_assets_loaded,1,TRUE,PASS
+physical_lazy_assets_loaded,1,TRUE,PASS
+startup_external_api_call,0,FALSE,PASS

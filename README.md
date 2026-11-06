@@ -53,6 +53,10 @@ Timeseries 앱은 시장지표와 경제 시계열을 선택해서 비교하는 
 - endpoint 기준 보정 차트로 값의 크기가 다른 시리즈를 한 그래프에서 비교
 - 선택한 데이터를 CSV로 다운로드
 - 앱 화면의 데이터 업데이트 버튼으로 최신 데이터를 즉시 반영
+- `Semiconductor & Korea Link > Physical Indicators`에서 ECOS DRAM·Flash 국내 생산자물가지수와 월간 lead/lag 관계 확인
+- `Series Explorer > Physical Indicators`에서 BWET 유조선 운임선물 ETF proxy 조회
+
+DRAM·Flash 지표는 한국은행 생산자물가지수이며 글로벌 현물·계약가격이 아닙니다. BWET는 ETF 시장가격 proxy로서 VLCC 현물운임이나 Baltic 공식 운임지수가 아니며 선물 롤, 운용보수, 추적오차가 반영될 수 있습니다.
 
 사용 흐름:
 
@@ -68,9 +72,9 @@ Timeseries 앱은 시장지표와 경제 시계열을 선택해서 비교하는 
 | 앱 | 업데이트 방식 | 주기 |
 | --- | --- | --- |
 | Dashboard | Bloomberg 원천 데이터 갱신 후 Shiny 앱 재배포 | 매주 월요일 저녁 |
-| Timeseries | 앱 내부 데이터 업데이트 버튼 실행 | 버튼을 누르는 즉시 |
+| Timeseries | 정기 배치 및 앱 내부 데이터 업데이트 버튼 | KR 16:05 KST, US 18:05 New York 평일; 버튼 실행 시 즉시 |
 
-Dashboard는 정해진 주기로 관리자가 데이터를 갱신하고 재배포합니다. Timeseries는 사용자가 앱에서 업데이트 버튼을 누르면 Yahoo/FRED 데이터를 기준으로 즉시 갱신됩니다.
+Dashboard는 정해진 주기로 관리자가 데이터를 갱신하고 재배포합니다. Timeseries는 정기 배치로 Yahoo/FRED/ECOS 자료를 갱신하며, 사용자가 앱에서 업데이트 버튼을 누르면 Yahoo/FRED 자료를 즉시 갱신할 수도 있습니다.
 
 ## 개발자용 실행 방법
 
@@ -97,3 +101,116 @@ Dashboard 재배포:
 ```r
 source("scripts/deploy_bl_dashboard.R")
 ```
+
+
+## Timeseries catalog and analysis
+
+The Timeseries app includes these analysis tabs:
+
+- Sector Rotation: 1W/1M/3M/6M/YTD returns, 1M excess versus SPY, monthly rank change, and 20/60/120-day volatility for all 11 US sectors.
+- Series Explorer: filtered level/return charts, CSV download, return-based correlation, explicit benchmark beta, current drawdown, and maximum drawdown.
+- Korea Rates & Funding: official ECOS curve, rate changes, funding/credit spreads, Korea-US comparisons, FX linkage, and rolling correlations.
+- Semiconductor & Korea Link: SOXX/XSD/NVDA/MU/SKHY/EWY/KOSPI/SK hynix performance, signal spreads, next-Korean-session relationship, and rolling correlations.
+
+Series are configured once in `apps/timeseries/series_catalog.csv`. Adding a Yahoo row with `active=TRUE` and `collect_flag=TRUE` triggers full-history collection on its first update and incremental collection afterward. `default_visible` controls the normal explorer list independently. Disabling collection or default display never deletes stored history.
+
+The ECOS/SOX integrated work order completed Gates 1-6 on 2026-11-06. It now includes official ECOS history, Korea Rates, SOX constituent analysis, guarded US/KR scheduled collection, atomic publication, final regression/performance validation, and the public release. Final evidence is in `docs/gate6/GATE6_VALIDATION_REPORT.md`.
+
+Return, correlation, beta, momentum, and volatility calculations use Adjusted Close with Close fallback. Absolute-level charts use Close. The app does not download at startup; use Update Yahoo Data explicitly.
+
+Run an incremental Yahoo update:
+
+```r
+options(market_ts.skip_autorun = TRUE)
+source("apps/timeseries/dataExtract_fredyahoo.R")
+run_market_data_update(update_fred = FALSE, update_yahoo = TRUE)
+```
+
+Run a full Yahoo adjusted-history resync:
+
+```r
+run_market_data_update(update_fred = FALSE, update_yahoo = TRUE, yahoo_full_resync = TRUE)
+```
+
+## ECOS collector
+
+ECOS collection is a standalone batch process. The Shiny app does not call ECOS during startup or a user session. Set `ECOS_API_KEY` in the operating environment; never place the key in code, CSV, logs, or deployment archives.
+
+Refresh the official table/item/meta readback:
+
+```powershell
+Rscript scripts/ecos_gate2_readback.R
+```
+
+Validate and register the verified ECOS catalog rows:
+
+```powershell
+Rscript scripts/run_register_ecos_gate2.R
+```
+
+Run full-history collection on an empty ECOS store, or five-business-day overlap collection when history already exists:
+
+```powershell
+Rscript scripts/collect_ecos_gate2.R
+```
+
+Run the independent Gate 2 checks:
+
+```powershell
+Rscript scripts/validate_gate2.R
+```
+
+Gate 2 evidence is in `docs/gate2/GATE2_VALIDATION_REPORT.md`.
+
+## Korea Rates & Funding
+
+Gate 3 derives its analysis store from the existing ECOS and FRED FST files. The build is offline and non-destructive: source FST files are read-only, staging is validated before publication, and the Shiny tab lazy-loads only the derived FST. The app never calls ECOS or FRED APIs during startup or a user session.
+
+Build the derived store:
+
+```powershell
+Rscript scripts/build_korea_rates_summary.R
+Rscript scripts/build_market_ui_core.R
+```
+
+Run UI and integrity validation:
+
+```powershell
+Rscript scripts/test_korea_rates_ui.R
+Rscript scripts/measure_gate3_performance.R
+Rscript scripts/validate_gate3.R
+```
+
+The initial Korea Rates view reads `derived_korea_rates_latest.fst` and loads the full historical rate store only after a history-dependent subtab is opened. The prejoined and pretransformed `derived_series_explorer.fst` is read once per app session so Series Explorer tab transitions remain below the two-second contract without any external API call.
+
+Gate 3 evidence is in `docs/gate3/GATE3_VALIDATION_REPORT.md`; performance evidence is in `docs/gate3/GATE3_PERFORMANCE_REMEDIATION.md`.
+# SOX Constituents (Gate 4)
+
+The Time Series app now includes a lazy-loaded `SOX Constituents` tab covering overview, breadth, contribution, value chain, Korea linkage, constituents, and data quality. Membership is an official Nasdaq snapshot; weights are clearly identified as an Invesco SOXQ proxy. Historical membership before 2026-11-04 is not inferred.
+
+Gate 4 implementation and independent audit evidence is in [`docs/gate4/GATE4_VALIDATION_REPORT.md`](docs/gate4/GATE4_VALIDATION_REPORT.md).
+
+## Scheduled collection and release
+
+Gate 5 registered three guarded Windows tasks:
+
+- `MARKET_TS_US_CLOSE_DST`: Tuesday-Saturday 07:05 KST.
+- `MARKET_TS_US_CLOSE_STANDARD`: Tuesday-Saturday 08:05 KST.
+- `MARKET_TS_KR_CLOSE`: Monday-Friday 16:05 KST.
+
+The US runtime guard permits only 18:05 America/New_York, so exactly one US task runs across DST changes. Collection runs in staging, validates schema, duplicates, freshness, and critical series, builds derived stores, and then publishes with transaction rollback and `.last_good` preservation. Runtime state is written to `batch_state/us_close_latest.json` and `batch_state/kr_close_latest.json`.
+
+Run a batch manually:
+
+```powershell
+powershell -File scripts/run_gate5_batch.ps1 -Batch us
+powershell -File scripts/run_gate5_batch.ps1 -Batch kr
+```
+
+Deploy the validated public app:
+
+```powershell
+Rscript scripts/deploy_timeseries_gate6.R
+```
+
+The public release is <https://deephouse1999.shinyapps.io/market_timeseries/>. Local scheduled updates do not mutate the immutable shinyapps.io bundle; rerun the deployment command when a new public snapshot is required.

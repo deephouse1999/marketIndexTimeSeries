@@ -1,0 +1,29 @@
+check,status,detail
+ecos_input_unchanged,PASS,125625 rows
+fred_input_unchanged,PASS,456067 rows
+yahoo_input_unchanged,PASS,437232 rows
+ecos_gate2_sha_unchanged,PASS,Gate 2 SHA = Gate 3 SHA; rows=125625; series=18; duplicates=0
+derived_schema,PASS,12 required columns present
+derived_independent_readback,PASS,"153329 rows, 156 metrics"
+derived_duplicate_keys,PASS,duplicate metric_id + observation_date + reference_date = 0
+derived_last_good,PASS,153329 readable last-good rows
+yield_curve_common_date,PASS,curve as of 2026-11-04
+yield_curve_complete,PASS,8 required tenors present
+rate_change_bp,PASS,85 validated bp rows
+rate_change_no_locf,PASS,Current/reference dates are actual source observations
+funding_spread,PASS,39776 same-date spread rows
+special_aaa_disabled,PASS,No SPECIAL_AAA_03Y derived value exists
+kr_us_alignment,PASS,28796 US-to-next-KR aligned rows
+rolling_full_windows,PASS,40398 full-window correlations
+no_generated_nonbusiness_observations,PASS,All derived dates trace to ECOS or FRED observations
+fx_source_separation,PASS,ECOS_USDKRW remains separate from Yahoo USDKRW=X
+derived_atomic_publication,PASS,Invalid duplicate staging rejected; published target remained unchanged
+korea_rates_ui,PASS,Lazy-load and 18 Korea Rates outputs passed
+legacy_regression,PASS,Existing Sector Rotation outputs passed
+cold_render_le_2s,PASS,cold max 1.306s
+warm_render_p95_le_2s,PASS,warm p95 0.423s
+filter_response_p95_le_2s,PASS,filter p95 0.365s
+app_startup_le_5s,PASS,startup max 2.873s
+session_memory_le_500mb,PASS,session RSS max 361.2 MB
+app_startup_no_external_api,PASS,No ECOS API adapter or key reference in Shiny sources
+documentation_updated,PASS,Required remediation evidence exists

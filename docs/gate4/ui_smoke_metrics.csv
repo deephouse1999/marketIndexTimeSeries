@@ -1,0 +1,5 @@
+check,value,status
+app_startup_seconds,1.6797740459442139,PASS
+session_memory_mb,363.796875,PASS
+lazy_load,1,PASS
+rendered_outputs,9,PASS

@@ -1,0 +1,8 @@
+check,value,status
+app_source_seconds,1.7508649826049805,PASS
+pre_remediation_all_output_seconds,4.874,HISTORICAL_FAIL
+korea_output_count,18,PASS
+legacy_output_count,4,PASS
+session_memory_mb,470.71484375,PASS
+latest_only_initial,1,PASS
+history_lazy_load,1,PASS

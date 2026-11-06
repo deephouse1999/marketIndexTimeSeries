@@ -1,0 +1,3 @@
+"dataset","path","rows","series","start_date","end_date","duplicate_keys"
+"FRED","C:/app/econ_ts/marketIndexTimeSeries/apps/timeseries/original_ts_fred.fst",456067,43,"1901-06-30","2026-11-04",0
+"YAHOO","C:/app/econ_ts/marketIndexTimeSeries/apps/timeseries/original_ts_yahoo.fst",437232,59,"1919-12-31","2026-11-04",0

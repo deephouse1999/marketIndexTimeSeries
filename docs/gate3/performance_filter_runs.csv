@@ -1,0 +1,13 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result
+filter_1,filter_response_tenor_a,2026-11-05 17:47:38.141 KST,2026-11-05 17:47:38.386 KST,0.241,same_session_historical_store_cached,curve_plot,PASS
+filter_2,filter_response_tenor_b,2026-11-05 17:47:38.388 KST,2026-11-05 17:47:38.619 KST,0.22640000000596047,same_session_historical_store_cached,curve_plot,PASS
+filter_3,filter_response_tenor_c,2026-11-05 17:47:38.621 KST,2026-11-05 17:47:38.847 KST,0.22409999999403954,same_session_historical_store_cached,curve_plot,PASS
+filter_4,filter_response_spread_a,2026-11-05 17:47:39.179 KST,2026-11-05 17:47:39.588 KST,0.40459999999403956,same_session_historical_store_cached,spread_plot,PASS
+filter_5,filter_response_spread_b,2026-11-05 17:47:39.589 KST,2026-11-05 17:47:39.802 KST,0.21130000001192092,same_session_historical_store_cached,spread_plot,PASS
+filter_6,filter_response_spread_c,2026-11-05 17:47:39.804 KST,2026-11-05 17:47:40.009 KST,0.20380000001192092,same_session_historical_store_cached,spread_plot,PASS
+filter_7,filter_response_pair_a,2026-11-05 17:47:40.673 KST,2026-11-05 17:47:40.916 KST,0.23990000000596046,same_session_historical_store_cached,kr_us_plot,PASS
+filter_8,filter_response_pair_b,2026-11-05 17:47:40.918 KST,2026-11-05 17:47:41.160 KST,0.24039999997615813,same_session_historical_store_cached,kr_us_plot,PASS
+filter_9,filter_response_relation_a,2026-11-05 17:47:41.161 KST,2026-11-05 17:47:41.496 KST,0.3321999999880791,same_session_historical_store_cached,rolling_plot,PASS
+filter_10,filter_response_relation_b,2026-11-05 17:47:41.498 KST,2026-11-05 17:47:41.822 KST,0.31759999999403954,same_session_historical_store_cached,rolling_plot,PASS
+filter_11,filter_response_range_a,2026-11-05 17:47:42.071 KST,2026-11-05 17:47:42.177 KST,0.10390000000596046,same_session_historical_store_cached,fx_plot,PASS
+filter_12,filter_response_range_b,2026-11-05 17:47:42.179 KST,2026-11-05 17:47:42.273 KST,0.09209999999403953,same_session_historical_store_cached,fx_plot,PASS

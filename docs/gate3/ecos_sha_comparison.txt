@@ -1,0 +1,13 @@
+Gate 2 / Gate 3 ECOS SHA comparison
+===================================
+Gate 2 batch: ECOS_20261105T141941
+Gate 2 publication completed: 2026-11-05 14:19:46 KST
+Published artifact last-write: 2026-11-05 14:19:44.728 KST
+Evidence basis: the final Gate 2 published artifact predates the Gate 2 validation report and the first Gate 3 derived build; its last-write timestamp has not changed since publication.
+The Gate 2 report omitted SHA, so the baseline is recovered from that final published artifact, not from the prior-version .last_good backup.
+Gate 2 published artifact SHA256: 6245DA33D871B5A8ED264238EA9AE8FDBF4A5E8A0F5D814A9793EEDAA33447F5
+Gate 3 completion SHA256:        6245DA33D871B5A8ED264238EA9AE8FDBF4A5E8A0F5D814A9793EEDAA33447F5
+Rows: 125625
+Series: 18
+Duplicate source+series_id+date keys: 0
+Result: ECOS_GATE2_SHA_UNCHANGED

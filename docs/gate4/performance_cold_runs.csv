@@ -1,0 +1,6 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,app_startup_seconds,measurement_method
+browser_cold_1,cold_initial_visible_render,2026-11-06 15:36:50 KST,2026-11-06 15:36:50 KST,0.0537109375,fresh_r_process_and_browser,status+benchmark,PASS,2.6979025,CHROMIUM_DOM_VISIBLE_RENDER
+browser_cold_2,cold_initial_visible_render,2026-11-06 15:36:58 KST,2026-11-06 15:36:58 KST,0.05894207954406738,fresh_r_process_and_browser,status+benchmark,PASS,2.6343837,CHROMIUM_DOM_VISIBLE_RENDER
+browser_cold_3,cold_initial_visible_render,2026-11-06 15:37:06 KST,2026-11-06 15:37:06 KST,0.06960892677307129,fresh_r_process_and_browser,status+benchmark,PASS,2.6423703,CHROMIUM_DOM_VISIBLE_RENDER
+browser_cold_4,cold_initial_visible_render,2026-11-06 15:37:14 KST,2026-11-06 15:37:14 KST,0.04813098907470703,fresh_r_process_and_browser,status+benchmark,PASS,2.6378709,CHROMIUM_DOM_VISIBLE_RENDER
+browser_cold_5,cold_initial_visible_render,2026-11-06 15:37:22 KST,2026-11-06 15:37:22 KST,0.05888795852661133,fresh_r_process_and_browser,status+benchmark,PASS,3.1547734,CHROMIUM_DOM_VISIBLE_RENDER

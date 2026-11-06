@@ -1,0 +1,6 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,startup_seconds,memory_mb
+cold_1,cold_initial_visible_render,2026-11-05 17:46:46.170 KST,2026-11-05 17:46:47.394 KST,1.2016000000238418,new_r_process_new_browser_cleared_cache,status;build;curve_plot;rate_summary;spread_summary,PASS,2.5276339054107666,321.56640625
+cold_2,cold_initial_visible_render,2026-11-05 17:46:55.595 KST,2026-11-05 17:46:56.937 KST,1.3055,new_r_process_new_browser_cleared_cache,status;build;curve_plot;rate_summary;spread_summary,PASS,2.872802972793579,321.8828125
+cold_3,cold_initial_visible_render,2026-11-05 17:47:05.056 KST,2026-11-05 17:47:06.225 KST,1.1398000000119208,new_r_process_new_browser_cleared_cache,status;build;curve_plot;rate_summary;spread_summary,PASS,2.8309412002563477,321.53515625
+cold_4,cold_initial_visible_render,2026-11-05 17:47:14.415 KST,2026-11-05 17:47:15.602 KST,1.1675,new_r_process_new_browser_cleared_cache,status;build;curve_plot;rate_summary;spread_summary,PASS,2.830188035964966,321.6171875
+cold_5,cold_initial_visible_render,2026-11-05 17:47:23.699 KST,2026-11-05 17:47:24.907 KST,1.1839000000059605,new_r_process_new_browser_cleared_cache,status;build;curve_plot;rate_summary;spread_summary,PASS,2.852861166000366,321.3515625

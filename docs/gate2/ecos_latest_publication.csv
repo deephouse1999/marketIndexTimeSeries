@@ -1,0 +1,2 @@
+batch_id,status,configured_series,published_series,rows,duplicate_keys,start_date,end_date,pending_source,published,completed_at
+ECOS_20261106T210225,PASS,20,20,126302,0,1964-05-04,2026-11-06,4,TRUE,2026-11-06 21:02:31 KST

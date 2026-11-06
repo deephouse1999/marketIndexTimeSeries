@@ -1,0 +1,2 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,app_startup_seconds
+cold_5,cold_initial_visible_render,2026-11-05 18:27:53 KST,2026-11-05 18:27:55 KST,1.7128732204437256,fresh_process,status+benchmark,PASS,1.3805489540100098

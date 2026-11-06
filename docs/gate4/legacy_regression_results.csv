@@ -1,0 +1,16 @@
+screen,output_id,status
+Sector Rotation,sector_beating,PASS
+Sector Rotation,sector_latest,PASS
+Sector Rotation,sector_excess_plot,PASS
+Sector Rotation,sector_table,PASS
+Series Explorer,currentChangeTable,PASS
+Series Explorer,corr_note,PASS
+Korea Rates & Funding,kr_status_text,PASS
+Korea Rates & Funding,kr_curve_plot,PASS
+Korea Rates & Funding,kr_rate_summary_table,PASS
+Korea Rates & Funding,kr_spread_summary_table,PASS
+Semiconductor & Korea Link,link_performance,PASS
+Semiconductor & Korea Link,link_cumulative_plot,PASS
+Semiconductor & Korea Link,link_spread_plot,PASS
+Semiconductor & Korea Link,link_relation_table,PASS
+Semiconductor & Korea Link,link_rolling_plot,PASS

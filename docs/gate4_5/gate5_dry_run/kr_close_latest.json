@@ -1,0 +1,21 @@
+{
+  "batch_id": "KR_CLOSE_20261106T213123",
+  "expected_session": "2026-11-06",
+  "started_at": "2026-11-06 21:31:23 KST",
+  "completed_at": "2026-11-06 21:32:04 KST",
+  "status": "STAGING_VALIDATED_NO_PUBLICATION",
+  "configured_series": 0,
+  "updated_series": 0,
+  "no_new_data_series": 0,
+  "missing_critical": [],
+  "pending_source": [],
+  "published": false,
+  "schedule": {
+    "eligible": false,
+    "timezone": "Asia/Seoul",
+    "local_time": "2026-11-06 21:31:23 KST",
+    "weekday": 5,
+    "target": "16:05",
+    "new_york_dst": false
+  }
+}

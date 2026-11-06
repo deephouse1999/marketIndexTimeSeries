@@ -1,0 +1,22 @@
+check_id,actual,expected,result
+catalog_registration,3,3 active/collectable/default-visible physical indicators,PASS
+catalog_metadata_contract,,all metadata columns populated,PASS
+ecos_metadata_readback,KR_DRAM_PPI VERIFIED;KR_FLASH_MEMORY_PPI VERIFIED,2/2 VERIFIED official readback,PASS
+ecos_source_updated_at_semantics,NOT_PROVIDED_BY_ECOS_ITEM_API,NOT_PROVIDED_BY_ECOS_ITEM_API and raw source_updated_at=NA,PASS
+physical_collection_inventory,KR_DRAM_PPI=381;KR_FLASH_MEMORY_PPI=261;BWET_VLCC_PROXY=882,DRAM=381; Flash=261; BWET>=880,PASS
+physical_duplicate_keys,0,0,PASS
+ppi_monthly_no_locf,01,one row per reference month and day=01,PASS
+bwet_close_adjusted_preserved,882/882,both equal BWET row count,PASS
+time_metadata_fields,,all required fields in ECOS and Yahoo stores,PASS
+available_at_contract,1524,all PASS,PASS
+ppi_derived_metrics,CHANGE_3M;CHANGE_6M;LEVEL;MOM;STREAK_MONTHS;YOY,LEVEL/MOM/YOY/CHANGE_3M/CHANGE_6M/STREAK_MONTHS,PASS
+bwet_derived_metrics,CORR_252D_CL=F;CORR_252D_XLE;CORR_252D_XOP;MAX_DRAWDOWN;RETURN_1D;RETURN_1M;RETURN_1W;RETURN_3M;VOL_20D;WTI_DOWN_EXCESS_VS_XLE;WTI_UP_EXCESS_VS_XLE,returns/correlations/regimes/volatility/MDD,PASS
+ppi_reference_month_lead_lag,104/+0:-6,104 exploratory rows across -6..+6; release-time limitation explicit,PASS
+derived_duplicate_keys,0,0,PASS
+proxy_semantics,vlcc_spot_rate_or_baltic_official_index,vlcc_spot_rate_or_baltic_official_index,PASS
+scheduled_batch_inclusion,KR ECOS + US catalog-driven Yahoo + physical build,both schedules include collectors and derived build,PASS
+app_external_api_calls,FALSE,FALSE,PASS
+browser_functional,11/11,11/11,PASS
+physical_cold_visible_render,0.846,<=2 seconds,PASS
+integrated_performance,0.077/0.241/0.083/3.163,cold/warm/filter <=2; startup <=5,PASS
+session_memory_with_physical,413.4453125,<=500 MB and physical lazy assets loaded,PASS

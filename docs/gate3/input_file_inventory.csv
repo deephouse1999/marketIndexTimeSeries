@@ -1,0 +1,4 @@
+dataset,path,rows,series,start_date,end_date,sha256
+ECOS,C:/app/econ_ts/marketIndexTimeSeries/apps/timeseries/original_ts_ecos.fst,125625,18,1964-05-04,2026-11-05,6245DA33D871B5A8ED264238EA9AE8FDBF4A5E8A0F5D814A9793EEDAA33447F5
+FRED,C:/app/econ_ts/marketIndexTimeSeries/apps/timeseries/original_ts_fred.fst,456067,43,1901-06-30,2026-11-04,67CBDA72DEB4ED07A559584711F8AB71F83D1C578CC9F719774438F96DE53884
+YAHOO,C:/app/econ_ts/marketIndexTimeSeries/apps/timeseries/original_ts_yahoo.fst,437232,59,1919-12-31,2026-11-04,D9431E63A096991AEA2B03FDE34116155572F52F6FCA1A3F318EE7B8A3671972

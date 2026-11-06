@@ -1,0 +1,11 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,app_startup_seconds,measurement_method
+browser_warm_1,warm_tab_visible_render,2026-11-06 21:26:51 KST,2026-11-06 21:26:51 KST,0.2618231773376465,warm_browser_session,Breadth,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_2,warm_tab_visible_render,2026-11-06 21:26:51 KST,2026-11-06 21:26:52 KST,0.21189403533935547,warm_browser_session,Contribution,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_3,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.21653985977172852,warm_browser_session,Value Chain,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_4,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.21491193771362305,warm_browser_session,Korea Link,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_5,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.1715869903564453,warm_browser_session,Constituents,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_6,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.16022992134094238,warm_browser_session,Data Quality,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_7,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.012025117874145508,warm_browser_session,Overview,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_8,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.006770133972167969,warm_browser_session,Breadth,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_9,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.0040590763092041016,warm_browser_session,Contribution,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_warm_10,warm_tab_visible_render,2026-11-06 21:26:52 KST,2026-11-06 21:26:52 KST,0.01273798942565918,warm_browser_session,Value Chain,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER

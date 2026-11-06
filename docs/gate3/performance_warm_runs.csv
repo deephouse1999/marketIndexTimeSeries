@@ -1,0 +1,11 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result
+warm_1,warm_tab_render,2026-11-05 17:47:34.248 KST,2026-11-05 17:47:34.728 KST,0.4768000000119209,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_2,warm_tab_render,2026-11-05 17:47:34.780 KST,2026-11-05 17:47:35.138 KST,0.3563000000119209,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_3,warm_tab_render,2026-11-05 17:47:35.189 KST,2026-11-05 17:47:35.507 KST,0.31269999998807907,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_4,warm_tab_render,2026-11-05 17:47:35.550 KST,2026-11-05 17:47:35.878 KST,0.3251999999880791,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_5,warm_tab_render,2026-11-05 17:47:35.928 KST,2026-11-05 17:47:36.280 KST,0.3502000000178814,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_6,warm_tab_render,2026-11-05 17:47:36.310 KST,2026-11-05 17:47:36.624 KST,0.3117999999821186,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_7,warm_tab_render,2026-11-05 17:47:36.681 KST,2026-11-05 17:47:36.993 KST,0.3097999999821186,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_8,warm_tab_render,2026-11-05 17:47:37.043 KST,2026-11-05 17:47:37.371 KST,0.326,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_9,warm_tab_render,2026-11-05 17:47:37.419 KST,2026-11-05 17:47:37.738 KST,0.3171999999880791,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS
+warm_10,warm_tab_render,2026-11-05 17:47:37.797 KST,2026-11-05 17:47:38.120 KST,0.32030000001192094,same_session_latest_index_cached,status;build;curve_plot;rate_summary;spread_summary,PASS

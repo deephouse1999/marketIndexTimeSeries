@@ -1,0 +1,22 @@
+check_id,actual,expected,result
+fred_no_history_loss,503123/246950,>=456067 rows; >=246950 legacy NA-source,PASS
+fred_duplicate_keys,0,0,PASS
+yahoo_no_history_loss,473230,>=437232,PASS
+yahoo_duplicate_keys,0,0,PASS
+old_dji_preserved,1919-12-31,<=1919-12-31,PASS
+bovespa_regional_role,emerging_market_index/regional_comparison,emerging_market_index/regional_comparison,PASS
+ecos_inventory,125645/18/0,>=125625/18/0,PASS
+sox_inventory,207906/30/0,>=207905/30/0,PASS
+series_explorer_store,772471/0,>700000/0,PASS
+browser_functional,28/28,28/28,PASS
+main_tab_render,1.9988899230957,<=2,PASS
+server_runtime,startup_seconds PASS;session_memory_mb PASS;series_explorer_cache_loaded PASS;sox_initial_assets_loaded PASS;startup_external_api_call PASS,all PASS,PASS
+cold_render,0.0782759189605713,<=2,PASS
+warm_render_p95,0.290791165828705,<=2,PASS
+filter_response_p95,0.152794122695923,<=2,PASS
+app_startup,3.1449122,<=5,PASS
+session_memory,434.6328125,<=500,PASS
+csv_downloads,3/153352/86716,all >0,PASS
+public_release,12787377/https://deephouse1999.shinyapps.io/market_timeseries/,deployed bundle matches public smoke and PASS,PASS
+gate5_prerequisite,30/30,30/30,PASS
+documentation_integrity,,all required docs and Gate 6 markers,PASS

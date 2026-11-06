@@ -1,0 +1,29 @@
+screen,check,actual,result
+Sector Rotation,sector_beating,TRUE,PASS
+Sector Rotation,sector_latest,TRUE,PASS
+Sector Rotation,sector_excess_plot,TRUE,PASS
+Sector Rotation,sector_table,TRUE,PASS
+Series Explorer,currentChangeTable,TRUE,PASS
+Series Explorer,corr_note,TRUE,PASS
+Series Explorer,download_selected_ui,TRUE,PASS
+Series Explorer,csv_download,3,PASS
+Korea Rates & Funding,kr_status_text,TRUE,PASS
+Korea Rates & Funding,kr_curve_plot,TRUE,PASS
+Korea Rates & Funding,kr_rate_summary_table,TRUE,PASS
+Korea Rates & Funding,kr_spread_summary_table,TRUE,PASS
+Korea Rates & Funding,csv_download,153352,PASS
+SOX Constituents,sox_status,TRUE,PASS
+SOX Constituents,sox_benchmark_plot,TRUE,PASS
+SOX Constituents,sox_breadth_plot,TRUE,PASS
+SOX Constituents,sox_daily_table,TRUE,PASS
+SOX Constituents,sox_contribution_plot,TRUE,PASS
+SOX Constituents,sox_chain_plot,TRUE,PASS
+SOX Constituents,sox_korea_plot,TRUE,PASS
+SOX Constituents,sox_constituents_table,TRUE,PASS
+SOX Constituents,sox_quality_table,TRUE,PASS
+SOX Constituents,csv_download,86716,PASS
+Semiconductor & Korea Link,link_performance,TRUE,PASS
+Semiconductor & Korea Link,link_cumulative_plot,TRUE,PASS
+Semiconductor & Korea Link,link_spread_plot,TRUE,PASS
+Semiconductor & Korea Link,link_relation_table,TRUE,PASS
+Semiconductor & Korea Link,link_rolling_plot,TRUE,PASS

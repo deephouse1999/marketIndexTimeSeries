@@ -1,0 +1,3 @@
+series_id,stat_code,item_code,expected_item_name,cycle,unit_expected,stat_name,item_name,parent_item_code,unit_source,start_date,end_date,data_count,source_updated_at,status,official_readback_at,source_updated_at_status
+KR_DRAM_PPI,404Y016,30911201AA,DRAM,M,2020=100,4.1.1.3. 생산자물가지수(품목별),DRAM,309AA,2020=100,199501,202609,381,,VERIFIED,2026-11-06 21:01:22 KST,NOT_PROVIDED_BY_ECOS_ITEM_API
+KR_FLASH_MEMORY_PPI,404Y016,30911202AA,플래시메모리,M,2020=100,4.1.1.3. 생산자물가지수(품목별),플래시메모리,309AA,2020=100,200501,202609,261,,VERIFIED,2026-11-06 21:01:22 KST,NOT_PROVIDED_BY_ECOS_ITEM_API

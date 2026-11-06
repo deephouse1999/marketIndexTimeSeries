@@ -1,0 +1,167 @@
+source,series_id,source_symbol,display_name,display_name_ko,series_cls,series_group,sector,industry,region,currency,benchmark_series,price_policy,stat_code,cycle,item_code1,item_code2,item_code3,item_code4,unit,transform,collect_flag,default_visible,active,display_order,notes,indicator_type,proxy_for,frequency,release_lag,license_status,source_definition,available_at_policy,do_not_interpret_as,display_location
+YAHOO,2YY=F,2YY=F,2Y US Treasury Note,미국 2년 선물율,rate,broad,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,1,Early futures curve,,,,,,,,,
+YAHOO,^TNX,^TNX,10Y US Treasury Yield,미국 10년 국채금리,rate,broad,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,2,Rate curve node,,,,,,,,,
+YAHOO,^TYX,^TYX,30Y US Treasury Yield,미국 30년 국채금리,rate,broad,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,3,Rate curve node,,,,,,,,,
+YAHOO,AGGG.L,AGGG.L,Global Aggregate Bond ETF,j8,broad_etf,etf,NA,NA,GB,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,4,Global aggregate bond proxy,,,,,,,,,
+YAHOO,^DJI,^DJI,Dow Jones Industrial Average,다우존스 지수,broad_index,indices,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,5,US broad index,,,,,,,,,
+YAHOO,^GSPC,^GSPC,S&P 500,S&P 500 지수,broad_index,indices,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,6,US broad index,,,,,,,,,
+YAHOO,^IXIC,^IXIC,Nasdaq Composite,Nasdaq 지수,broad_index,indices,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,7,US broad index,,,,,,,,,
+YAHOO,SPY,SPY,S&P 500 ETF,SPY(국내대체 ETF),broad_etf,etf,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,8,US market benchmark,,,,,,,,,
+YAHOO,QQQ,QQQ,Nasdaq ETF,QQQ(나스닥 ETF),broad_etf,etf,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,9,US technology growth proxy,,,,,,,,,
+YAHOO,^VIX,^VIX,VIX,VIX 지수,volatility_index,volatility,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,10,Volatility,,,,,,,,,
+YAHOO,^TOPX,^TOPX,Topix,TOPIX 지수,broad_index,indices,NA,NA,JP,JPY,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,11,INTENTIONALLY_CATALOG_ONLY; unsupported Yahoo TOPIX symbol; replacement source pending,,,,,,,,,
+YAHOO,^FTSE,^FTSE,FTSE 100,FTSE100,broad_index,indices,NA,NA,GB,GBP,,adjusted,,,,,,,,,TRUE,FALSE,TRUE,12,Europe index,,,,,,,,,
+YAHOO,^GDAXI,^GDAXI,DAX,DAX 지수,broad_index,indices,NA,NA,EU,EUR,,adjusted,,,,,,,,,TRUE,FALSE,TRUE,13,Europe index,,,,,,,,,
+YAHOO,^HSI,^HSI,Hang Seng,HANG SENG,broad_index,indices,NA,NA,HK,HKD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,14,Asia index,,,,,,,,,
+YAHOO,^BVSP,^BVSP,Bovespa Index,브라질 보베스파 지수,emerging_market_index,regional_comparison,NA,NA,BR,BRL,^KS11,adjusted,,,,,,,,,TRUE,TRUE,TRUE,15,included_in_regional_view; no_standalone_module; large_em_market_comparison,,,,,,,,,
+YAHOO,^KS11,^KS11,KOSPI,KOSPI 지수,broad_index,indices,NA,NA,KR,KRW,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,15,Korea index;analysis_group=semiconductor_korea;link_role=kr_market,,,,,,,,,
+YAHOO,XLK,XLK,XLK(Technology),섹터:IT,sector_etf,sectors,Information Technology,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,16,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLC,XLC,XLC(Communication),섹터:Comm Services,sector_etf,sectors,Communication Services,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,17,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLY,XLY,XLY(Consumer Discretionary),섹터:경기소비재,sector_etf,sectors,Consumer Discretionary,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,18,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLP,XLP,XLP(Consumer Staples),섹터:필수소비재,sector_etf,sectors,Consumer Staples,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,19,Sector ETF;rotation_bucket=defensive,,,,,,,,,
+YAHOO,XLE,XLE,XLE(Energy),섹터:에너지,sector_etf,sectors,Energy,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,20,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLF,XLF,XLF(Financials),섹터:금융,sector_etf,sectors,Financials,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,21,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLV,XLV,XLV(Health Care),섹터:헬스케어,sector_etf,sectors,Health Care,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,22,Sector ETF;rotation_bucket=defensive,,,,,,,,,
+YAHOO,XLI,XLI,XLI(Industrials),섹터:산업재,sector_etf,sectors,Industrials,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,23,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLB,XLB,XLB(Materials),섹터:소재,sector_etf,sectors,Materials,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,24,Sector ETF;rotation_bucket=cyclical,,,,,,,,,
+YAHOO,XLU,XLU,XLU(Utilities),섹터:유틸리티,sector_etf,sectors,Utilities,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,25,Sector ETF;rotation_bucket=defensive,,,,,,,,,
+YAHOO,XLRE,XLRE,XLRE(Real Estate),섹터:부동산,sector_etf,sectors,Real Estate,NA,US,USD,SPY,adjusted,,,,,,,,,TRUE,TRUE,TRUE,26,Sector ETF;rotation_bucket=rate_sensitive,,,,,,,,,
+YAHOO,EWY,EWY,MSCI Korea,EWY ETF,country_etf,etf,NA,NA,KR,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,27,Korea proxy;analysis_group=semiconductor_korea;link_role=us_korea_proxy,,,,,,,,,
+YAHOO,ACWI,ACWI,MSCI ACWI,ACWI ETF,global_etf,etf,NA,NA,GLOBAL,USD,,adjusted,,,,,,,,,TRUE,FALSE,TRUE,28,Global equities,,,,,,,,,
+YAHOO,URTH,URTH,MSCI World,URTH ETF,global_etf,etf,NA,NA,GLOBAL,USD,,adjusted,,,,,,,,,TRUE,FALSE,TRUE,29,Developed ex-US plus US,,,,,,,,,
+YAHOO,EEM,EEM,MSCI Emerging Markets,EEM ETF,emerging_market_etf,etf,NA,NA,GLOBAL,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,30,Emerging markets,,,,,,,,,
+YAHOO,USDKRW=X,USDKRW=X,USD/KRW,USD/KRW,forex,fx,NA,NA,KRW,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,31,Korea FX,,,,,,,,,
+YAHOO,USDJPY=X,USDJPY=X,USD/JPY,USD/JPY,forex,fx,NA,NA,JPY,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,32,Japan FX,,,,,,,,,
+YAHOO,USDCNY=X,USDCNY=X,USD/CNY,USD/CNY,forex,fx,NA,NA,CNY,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,33,China FX,,,,,,,,,
+YAHOO,USDEUR=X,USDEUR=X,USD/EUR,USD/EUR,forex,fx,NA,NA,EUR,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,34,Europe FX,,,,,,,,,
+YAHOO,USDGBP=X,USDGBP=X,USD/GBP,USD/GBP,forex,fx,NA,NA,GBP,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,35,UK FX,,,,,,,,,
+YAHOO,DX-Y.NYB,DX-Y.NYB,DXY,달러 인덱스,forex,fx,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,36,Dollar strength,,,,,,,,,
+YAHOO,SOXX,SOXX,SOXX ETF,SOXX(반도체),industry_etf,industries,Semiconductors,NA,US,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,37,Semiconductor;analysis_group=semiconductor_korea;link_role=semi_benchmark,,,,,,,,,
+YAHOO,^SOX,^SOX,PHLX Semiconductor Index,필라델피아 반도체 지수,broad_index,indices,Semiconductors,NA,US,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,37,Semiconductor index,,,,,,,,,
+YAHOO,XSD,XSD,XSD ETF,XSD(소형반도체),industry_etf,industries,Semiconductors,NA,US,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,38,Semiconductor;analysis_group=semiconductor_korea;link_role=semi_breadth,,,,,,,,,
+YAHOO,IGV,IGV,IGV ETF,IGV(소프트웨어),industry_etf,industries,Software & Cloud,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,39,Software/Cloud,,,,,,,,,
+YAHOO,KRE,KRE,KRE ETF,KRE(지역은행),industry_etf,industries,Regional Banks,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,40,Banking,,,,,,,,,
+YAHOO,XHB,XHB,XHB ETF,XHB(주택),industry_etf,industries,Housing,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,41,Housing sensitivity,,,,,,,,,
+YAHOO,XOP,XOP,XOP ETF,XOP(유가증권),industry_etf,industries,Energy,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,42,Oil & gas,,,,,,,,,
+YAHOO,XAR,XAR,XAR ETF,XAR(방산),industry_etf,industries,Aerospace & Defense,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,43,Defense,,,,,,,,,
+YAHOO,NVDA,NVDA,NVIDIA,엔비디아,signal_stock,signal,Semiconductors,NA,US,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,44,Semiconductor signal;analysis_group=semiconductor_korea;link_role=ai_signal,,,,,,,,,
+YAHOO,MU,MU,Micron,마이크론,signal_stock,signal,Semiconductors,NA,US,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,45,Semiconductor signal;analysis_group=semiconductor_korea;link_role=memory_signal,,,,,,,,,
+YAHOO,SKHY,SKHY,SK hynix,SK하이닉스(미국ADR),signal_stock,signal,Semiconductors,NA,US,USD,SOXX,adjusted,,,,,,,,,TRUE,TRUE,TRUE,46,Korea signal stock;analysis_group=semiconductor_korea;link_role=us_hynix,,,,,,,,,
+YAHOO,000660.KS,000660.KS,SK hynix KR,SK하이닉스,signal_stock,signal,Semiconductors,NA,KR,KRW,SOXX,close,,,,,,,,,TRUE,TRUE,TRUE,47,Korea signal stock (spot);analysis_group=semiconductor_korea;link_role=kr_hynix,,,,,,,,,
+FRED,DGS1,DGS1,US 1Y Treasury Rate,미국 1Y 금리,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,101,Core macro controls,,,,,,,,,
+FRED,DGS2,DGS2,US 2Y Treasury Rate,미국 2Y 금리,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,102,Core macro controls,,,,,,,,,
+FRED,DGS5,DGS5,US 5Y Treasury Rate,미국 5Y 금리,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,103,Core macro controls,,,,,,,,,
+FRED,DGS10,DGS10,US 10Y Treasury Rate,미국 10Y 금리,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,104,Core macro controls,,,,,,,,,
+FRED,DGS30,DGS30,US 30Y Treasury Rate,미국 30Y 금리,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,105,Core macro controls,,,,,,,,,
+FRED,T10Y2Y,T10Y2Y,10Y-2Y Spread,10Y-2Y 스프레드,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,106,Yield curve indicator,,,,,,,,,
+FRED,FEDFUNDS,FEDFUNDS,Federal Funds Rate,연방기금금리,rate,rates,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,107,Policy rate,,,,,,,,,
+FRED,DFEDTAR,DFEDTAR,Federal Funds Target Rate (Discontinued),"l0k0)j80j8 k*)mj8k&,(l$k()",rate,policy,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,108,Discontinued Federal Funds target rate,,,,,,,,,
+FRED,DFEDTARU,DFEDTARU,Federal Funds Target Range Upper Limit,"l0k0)j80j8 k*)mj8k&, k2l lk(",rate,policy,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,109,Federal Funds target range upper limit,,,,,,,,,
+FRED,BAMLC0A1CAAAEY,BAMLC0A1CAAAEY,US AAA Corporate Effective Yield,"k/8j5- AAA ml,l1 l m(ll5k%",credit,credit,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,110,Corporate credit indicator,,,,,,,,,
+FRED,BAMLC0A3CAEY,BAMLC0A3CAEY,US Single-A Corporate Effective Yield,"k/8j5- A ml,l1 l m(ll5k%",credit,credit,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,111,Corporate credit indicator,,,,,,,,,
+FRED,BAMLC0A2CAAEY,BAMLC0A2CAAEY,US AA Corporate Effective Yield,"k/8j5- AA ml,l1 l m(ll5k%",credit,credit,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,112,Corporate credit indicator,,,,,,,,,
+FRED,BAMLC0A4CBBBEY,BAMLC0A4CBBBEY,US BBB Corporate Effective Yield,"k/8j5- BBB ml,l1 l m(ll5k%",credit,credit,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,113,Corporate credit indicator,,,,,,,,,
+FRED,BAMLH0A0HYM2,BAMLH0A0HYM2,US High Yield OAS,미국 하이일드 옵션조정 스프레드,credit,credit,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,114,ICE BofA US High Yield option-adjusted spread; FRED rolling 3-year history,,,,,,,,,
+FRED,BAMLH0A0HYM2EY,BAMLH0A0HYM2EY,US High Yield Effective Yield,k/8j5- ml4l<k l m(ll5k%,credit,credit,NA,NA,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,114,Corporate credit indicator,,,,,,,,,
+FRED,DJIA,DJIA,Dow Jones Industrial Average,다우존스 지수,broad_index,indices,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,115,Market broad index,,,,,,,,,
+FRED,NASDAQCOM,NASDAQCOM,NASDAQ Composite,NASDAQ 지수,broad_index,indices,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,116,Market broad index,,,,,,,,,
+FRED,SP500,SP500,S&P 500,S&P 500 지수,broad_index,indices,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,117,Market broad index,,,,,,,,,
+FRED,VIXCLS,VIXCLS,VIX,VIX 지수,broad_index,indices,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,118,Volatility index,,,,,,,,,
+FRED,DEXKOUS,DEXKOUS,KRW/USD,원달러 환율,forex,fx,NA,NA,KRW/USD,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,119,FX,,,,,,,,,
+FRED,DEXJPUS,DEXJPUS,JPY/USD,엔달러 환율,forex,fx,NA,NA,JPY/USD,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,120,FX,,,,,,,,,
+FRED,DEXCHUS,DEXCHUS,CNY/USD,중국위안 환율,forex,fx,NA,NA,CNY/USD,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,121,FX,,,,,,,,,
+FRED,DEXUSEU,DEXUSEU,EUR/USD,유로달러 환율,forex,fx,NA,NA,EUR/USD,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,122,FX,,,,,,,,,
+FRED,DEXUSUK,DEXUSUK,GBP/USD,파운드달러 환율,forex,fx,NA,NA,GBP/USD,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,123,FX,,,,,,,,,
+FRED,GDP,GDP,GDP,GDP,gdp,macro,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,124,Macro,,,,,,,,,
+FRED,GDPC1,GDPC1,Real GDP,실질 GDP,gdp,macro,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,125,Macro,,,,,,,,,
+FRED,B935RC1Q027SBEA,B935RC1Q027SBEA,Computer & Peripheral Equipment Investment,l;4m(m0B7l#<k3,investment,macro,NA,NA,US,USD,,close,,Q,,,,,Billions USD,,TRUE,TRUE,TRUE,126,Private fixed investment in computers and peripheral equipment,,,,,,,,,
+FRED,CPIAUCSL,CPIAUCSL,CPI YoY,CPI 전년동월비,general_inflation,macro,NA,NA,US,USD,,close,,,,,,,,yoy,TRUE,TRUE,TRUE,127,Inflation;display_transform=yoy,,,,,,,,,
+FRED,CPILFESL,CPILFESL,Core CPI YoY,근원 CPI 전년동월비,general_inflation,macro,NA,NA,US,USD,,close,,,,,,,,yoy,TRUE,TRUE,TRUE,128,Inflation;display_transform=yoy,,,,,,,,,
+FRED,PCEPI,PCEPI,PCE,PCE 지수,inflation,macro,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,129,Inflation,,,,,,,,,
+FRED,PCEPILFE,PCEPILFE,Core PCE,근원 PCE,general_inflation,macro,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,130,Inflation,,,,,,,,,
+FRED,PPIACO,PPIACO,PPI YoY,PPI 전년동월비,inflation,macro,NA,NA,US,USD,,close,,,,,,,,yoy,TRUE,TRUE,TRUE,131,Inflation;display_transform=yoy,,,,,,,,,
+FRED,WPSFD4131,WPSFD4131,Core Finished Goods PPI,j7<l ll m PPI,inflation,macro,NA,NA,US,USD,,close,,M,,,,,Index 1982=100,,TRUE,TRUE,TRUE,132,Finished goods less foods and energy,,,,,,,,,
+FRED,UNRATE,UNRATE,Unemployment Rate,실업률,employment,labor,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,133,Labor,,,,,,,,,
+FRED,ICSA,ICSA,Initial Claims,주간 신규 실업수당 청구건,employment,labor,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,134,Labor,,,,,,,,,
+FRED,PAYEMS,PAYEMS,Nonfarm Payrolls,비농업 고용,employment,labor,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,135,Labor,,,,,,,,,
+FRED,WTISPLC,WTISPLC,WTI Spot Price,"WTI mk,<j0",commodity,macro,NA,NA,US,USD,,close,,M,,,,,USD per barrel,,TRUE,TRUE,TRUE,136,Spot West Texas Intermediate crude oil price,,,,,,,,,
+FRED,FYFSD,FYFSD,Federal Debt,연방부채,gvt_debt,macro,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,137,Fiscal,,,,,,,,,
+FRED,MVGFD027MNFRBDAL,MVGFD027MNFRBDAL,Federal Debt to GDP,연방부채/GDP,gvt_debt,macro,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,138,Fiscal,,,,,,,,,
+FRED,PNFIC1,PNFIC1,Real Nonresidential Fixed Investment,실질 민간 비주거 고정투자,investment,investment,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,139,Broad business investment;frequency=quarterly,,,,,,,,,
+FRED,A679RC1Q027SBEA,A679RC1Q027SBEA,AI Capex Proxy,AI CAPEX 프록시(정보처리 장비·소프트웨어 투자),investment,investment,Information Technology,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,140,Information processing equipment and software investment;frequency=quarterly;proxy_role=ai_capex,,,,,,,,,
+FRED,IPG3344S,IPG3344S,Semiconductor Production Index,반도체·전자부품 산업생산,investment,investment,Semiconductors,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,141,Semiconductor and electronic component industrial production;frequency=monthly;proxy_role=ai_supply,,,,,,,,,
+FRED,NEWORDER,NEWORDER,Core Capital Goods New Orders,핵심 자본재 신규주문,investment,investment,NA,NA,US,USD,,close,,,,,,,,,TRUE,TRUE,TRUE,142,Nondefense capital goods excluding aircraft;frequency=monthly;proxy_role=capex_lead,,,,,,,,,
+FRED,DFEDTARL,DFEDTARL,Federal Funds Target Range Lower Limit,"l0k0)j80j8 k*)mj8k&, k2l mk(",rate,policy,,,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,143,Federal Reserve policy rate,,,,,,,,,
+FRED,DFII10,DFII10,US 10Y Real Treasury Yield,"k/8j5- 10k l$l'j5-l1j8k&,",rate,rates,,,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,144,Inflation-indexed Treasury yield,,,,,,,,,
+FRED,T10YIE,T10YIE,US 10Y Breakeven Inflation Rate,k/8j5- 10k j80k,rate,rates,,,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,145,10-year breakeven inflation,,,,,,,,,
+FRED,DFF,DFF,Effective Federal Funds Rate,"l$m( l0k0)j80j8j8k&,",rate,policy,,,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,146,Federal Reserve policy rate,,,,,,,,,
+FRED,SOFR,SOFR,Secured Overnight Financing Rate,k4k34k6,rate,policy,,,US,USD,,close,,D,,,,,Percent,,TRUE,TRUE,TRUE,147,US overnight funding rate,,,,,,,,,
+ECOS,BOK_BASE_RATE,BOK_BASE_RATE,Bank of Korea Base Rate,한국은행 기준금리,rate,kr_policy,,,KR,KRW,,close,722Y001,D,0101000,,,,연%,,TRUE,FALSE,TRUE,201,official_item_name=한국은행 기준금리; official_readback_verified,,,,,,,,,
+ECOS,CALL_01D,CALL_01D,Korea Call Rate 1D,콜금리 1일,rate,kr_short_rate,,,KR,KRW,,close,817Y002,D,010101000,,,,연%,,TRUE,FALSE,TRUE,202,"official_item_name=콜금리(1일, 전체거래); official_readback_verified",,,,,,,,,
+ECOS,CD_091D,CD_091D,Korea CD 91D Rate,CD 91일 금리,rate,kr_short_rate,,,KR,KRW,,close,817Y002,D,010502000,,,,연%,,TRUE,FALSE,TRUE,203,official_item_name=CD(91일); official_readback_verified,,,,,,,,,
+ECOS,CP_091D,CP_091D,Korea CP 91D Rate,CP 91일 금리,rate,kr_short_rate,,,KR,KRW,,close,817Y002,D,010503000,,,,연%,,TRUE,FALSE,TRUE,204,official_item_name=CP(91일); official_readback_verified,,,,,,,,,
+ECOS,MSB_091D,MSB_091D,Monetary Stabilization Bond 91D,통안증권 91일,rate,kr_short_rate,,,KR,KRW,,close,817Y002,D,010400000,,,,연%,,TRUE,FALSE,TRUE,205,official_item_name=통안증권(91일); official_readback_verified,,,,,,,,,
+ECOS,MSB_01Y,MSB_01Y,Monetary Stabilization Bond 1Y,통안증권 1년,rate,kr_short_rate,,,KR,KRW,,close,817Y002,D,010400001,,,,연%,,TRUE,FALSE,TRUE,206,official_item_name=통안증권(1년); official_readback_verified,,,,,,,,,
+ECOS,MSB_02Y,MSB_02Y,Monetary Stabilization Bond 2Y,통안증권 2년,rate,kr_short_rate,,,KR,KRW,,close,817Y002,D,010400002,,,,연%,,TRUE,FALSE,TRUE,207,official_item_name=통안증권(2년); official_readback_verified,,,,,,,,,
+ECOS,KTB_01Y,KTB_01Y,Korea Treasury Bond 1Y,국고채 1년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010190000,,,,연%,,TRUE,FALSE,TRUE,208,official_item_name=국고채(1년); official_readback_verified,,,,,,,,,
+ECOS,KTB_02Y,KTB_02Y,Korea Treasury Bond 2Y,국고채 2년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010195000,,,,연%,,TRUE,FALSE,TRUE,209,official_item_name=국고채(2년); official_readback_verified,,,,,,,,,
+ECOS,KTB_03Y,KTB_03Y,Korea Treasury Bond 3Y,국고채 3년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010200000,,,,연%,,TRUE,FALSE,TRUE,210,official_item_name=국고채(3년); official_readback_verified,,,,,,,,,
+ECOS,KTB_05Y,KTB_05Y,Korea Treasury Bond 5Y,국고채 5년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010200001,,,,연%,,TRUE,FALSE,TRUE,211,official_item_name=국고채(5년); official_readback_verified,,,,,,,,,
+ECOS,KTB_10Y,KTB_10Y,Korea Treasury Bond 10Y,국고채 10년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010210000,,,,연%,,TRUE,FALSE,TRUE,212,official_item_name=국고채(10년); official_readback_verified,,,,,,,,,
+ECOS,KTB_20Y,KTB_20Y,Korea Treasury Bond 20Y,국고채 20년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010220000,,,,연%,,TRUE,FALSE,TRUE,213,official_item_name=국고채(20년); official_readback_verified,,,,,,,,,
+ECOS,KTB_30Y,KTB_30Y,Korea Treasury Bond 30Y,국고채 30년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010230000,,,,연%,,TRUE,FALSE,TRUE,214,official_item_name=국고채(30년); official_readback_verified,,,,,,,,,
+ECOS,KTB_50Y,KTB_50Y,Korea Treasury Bond 50Y,국고채 50년,rate,kr_government_bond,,,KR,KRW,,close,817Y002,D,010240000,,,,연%,,TRUE,FALSE,TRUE,215,official_item_name=국고채(50년); official_readback_verified,,,,,,,,,
+ECOS,CORP_AAM_03Y,CORP_AAM_03Y,Korea Corporate AA- 3Y,회사채 AA- 3년,rate,kr_credit,,,KR,KRW,,close,817Y002,D,010300000,,,,연%,,TRUE,FALSE,TRUE,216,"official_item_name=회사채(3년, AA-); official_readback_verified",,,,,,,,,
+ECOS,CORP_BBBM_03Y,CORP_BBBM_03Y,Korea Corporate BBB- 3Y,회사채 BBB- 3년,rate,kr_credit,,,KR,KRW,,close,817Y002,D,010320000,,,,연%,,TRUE,FALSE,TRUE,217,"official_item_name=회사채(3년, BBB-); official_readback_verified",,,,,,,,,
+ECOS,ECOS_USDKRW,ECOS_USDKRW,Official KRW per USD,공식 원/달러 환율,forex,fx_official,,,KR,KRW,,close,731Y001,D,0000001,,,,원,,TRUE,FALSE,TRUE,218,official_item_name=원/미국달러(매매기준율); official_readback_verified,,,,,,,,,
+ECOS,SPECIAL_AAA_03Y,SPECIAL_AAA_03Y,Korea Special Bond AAA 3Y,특수채 AAA 3년,rate,kr_credit,,,KR,KRW,,close,,,,,,,,,FALSE,FALSE,FALSE,219,SOURCE_NOT_AVAILABLE; no verified representative special-bond AAA series in official ECOS 817Y002 readback,,,,,,,,,
+YAHOO,ZC=F,ZC=F,Corn,Corn 선물,commodity,commodity,NA,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,501,Commodities,,,,,,,,,
+YAHOO,HE=F,HE=F,Lean Hogs,Hogs 선물,commodity,commodity,NA,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,502,Commodities,,,,,,,,,
+YAHOO,CL=F,CL=F,WTI Crude,WTI 원유,commodity,commodity,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,503,Commodities,,,,,,,,,
+YAHOO,NG=F,NG=F,Natural Gas,천연가스,commodity,commodity,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,504,Commodities,,,,,,,,,
+YAHOO,GC=F,GC=F,Gold,금,commodity,commodity,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,505,Commodities,,,,,,,,,
+YAHOO,BTC-USD,BTC-USD,Bitcoin,비트코인,commodity,commodity,NA,NA,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,506,Digital assets,,,,,,,,,
+YAHOO,SHY,SHY,iShares 1-3 Year Treasury Bond ETF,k/8j5- k(j80j5-l1 ETF,broad_etf,bond_etf,,,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,507,Treasury duration,,,,,,,,,
+YAHOO,IEF,IEF,iShares 7-10 Year Treasury Bond ETF,k/8j5- l$j80j5-l1 ETF,broad_etf,bond_etf,,,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,508,Treasury duration,,,,,,,,,
+YAHOO,TLT,TLT,iShares 20+ Year Treasury Bond ETF,k/8j5- l%j80j5-l1 ETF,broad_etf,bond_etf,,,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,509,Treasury duration,,,,,,,,,
+YAHOO,LQD,LQD,iShares Investment Grade Corporate Bond ETF,"k/8j5- m,lk1j8	 ml,l1 ETF",broad_etf,credit,,,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,510,Credit risk proxy,,,,,,,,,
+YAHOO,HYG,HYG,iShares High Yield Corporate Bond ETF,"k/8j5- ml4l<k ml,l1 ETF",broad_etf,credit,,,US,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,511,Credit risk proxy,,,,,,,,,
+YAHOO,SOXQ,SOXQ,Invesco PHLX Semiconductor ETF,SOXQ k0kl24 ETF,industry_etf,industries,Technology,Semiconductors,US,USD,SOXX,adjusted,,,,,,,,,FALSE,TRUE,TRUE,512,Semiconductor industry,,,,,,,,,
+YAHOO,005930.KS,005930.KS,Samsung Electronics,l<l1l l,signal_stock,signal,Technology,Semiconductors,KR,KRW,SOXX,adjusted,,,,,,,,,FALSE,TRUE,TRUE,513,analysis_group=semiconductor_korea;link_role=kr_samsung,,,,,,,,,
+YAHOO,HG=F,HG=F,Copper Futures,"j5,k&, l k,<",commodity,commodity,,,Global,USD,,adjusted,,,,,,,,,TRUE,TRUE,TRUE,514,Industrial metals proxy,,,,,,,,,
+ECOS,KR_DRAM_PPI,KR_DRAM_PPI,Korea DRAM Producer Price Index,DRAM 국내 생산자물가지수,producer_price_index,physical_indicator,Technology,Semiconductors,KR,KRW,,close,404Y016,M,30911201AA,,,,2020=100,,TRUE,TRUE,TRUE,601,official_item_name=DRAM;physical_indicator=TRUE,producer_price_index,korean_dram_producer_price,monthly,source_publication_schedule,public,Bank of Korea ECOS producer price index by item,COLLECTED_AT_CONSERVATIVE,global_dram_spot_or_contract_price,semiconductor_korea_link
+ECOS,KR_FLASH_MEMORY_PPI,KR_FLASH_MEMORY_PPI,Korea Flash Memory Producer Price Index,Flash Memory 국내 생산자물가지수,producer_price_index,physical_indicator,Technology,Semiconductors,KR,KRW,,close,404Y016,M,30911202AA,,,,2020=100,,TRUE,TRUE,TRUE,602,official_item_name=플래시메모리;physical_indicator=TRUE,producer_price_index,korean_flash_memory_producer_price,monthly,source_publication_schedule,public,Bank of Korea ECOS producer price index by item,COLLECTED_AT_CONSERVATIVE,global_flash_spot_or_contract_price,semiconductor_korea_link
+YAHOO,BWET_VLCC_PROXY,BWET,Tanker Freight Futures ETF Proxy (BWET),유조선 운임선물 ETF 프록시,freight_futures_etf_proxy,physical_indicator,Energy,Tanker Freight,US,USD,XLE,adjusted,,,,,,,USD,,TRUE,TRUE,TRUE,603,physical_indicator=TRUE;proxy_only=TRUE,freight_futures_etf_proxy,tanker_freight_market,daily,market_close,public_market_price,Breakwave Tanker Shipping ETF market price,US_CLOSE_AVAILABLE,vlcc_spot_rate_or_baltic_official_index,series_explorer
+YAHOO,AAPL,AAPL,Apple,애플,legacy_stock,legacy,Technology,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,1001,Legacy tracking period,,,,,,,,,
+YAHOO,GOOG,GOOG,Alphabet,알파벳,legacy_stock,legacy,Technology,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,1002,Legacy tracking period,,,,,,,,,
+YAHOO,TSLA,TSLA,Tesla,테슬라,legacy_stock,legacy,Auto,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,1003,Legacy tracking period,,,,,,,,,
+YAHOO,META,META,Meta,메타,legacy_stock,legacy,Technology,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,1004,Legacy tracking period,,,,,,,,,
+YAHOO,LLY,LLY,Eli Lilly,Lilly,legacy_stock,legacy,Healthcare,NA,US,USD,,adjusted,,,,,,,,,FALSE,FALSE,TRUE,1005,Legacy tracking period,,,,,,,,,
+YAHOO,ADI,ADI,Analog Devices,Analog Devices,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1006,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,ALAB,ALAB,Astera Labs,Astera Labs,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1007,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,AMAT,AMAT,Applied Materials,Applied Materials,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1008,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,AMD,AMD,Advanced Micro Devices,Advanced Micro Devices,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1009,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,ARM,ARM,Arm Holdings,Arm Holdings,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1010,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,ASML,ASML,ASML Holding,ASML Holding,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1011,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,AVGO,AVGO,Broadcom,Broadcom,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1012,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,COHR,COHR,Coherent,Coherent,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1013,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,CRDO,CRDO,Credo Technology,Credo Technology,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1014,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,ENTG,ENTG,Entegris,Entegris,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1015,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,GFS,GFS,GlobalFoundries,GlobalFoundries,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1016,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,INTC,INTC,Intel,Intel,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1017,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,KLAC,KLAC,KLA,KLA,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1018,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,LRCX,LRCX,Lam Research,Lam Research,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1019,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,LSCC,LSCC,Lattice Semiconductor,Lattice Semiconductor,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1020,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,MCHP,MCHP,Microchip Technology,Microchip Technology,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1021,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,MPWR,MPWR,Monolithic Power Systems,Monolithic Power Systems,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1022,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,MRVL,MRVL,Marvell Technology,Marvell Technology,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1023,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,MTSI,MTSI,MACOM Technology Solutions,MACOM Technology Solutions,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1024,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,NXPI,NXPI,NXP Semiconductors,NXP Semiconductors,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1025,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,ON,ON,onsemi,onsemi,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1026,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,Q,Q,Qnity Electronics,Qnity Electronics,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1027,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,QCOM,QCOM,Qualcomm,Qualcomm,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1028,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,SITM,SITM,SiTime,SiTime,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1029,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,TER,TER,Teradyne,Teradyne,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1030,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,TSEM,TSEM,Tower Semiconductor,Tower Semiconductor,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1031,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,TSM,TSM,Taiwan Semiconductor Manufacturing,Taiwan Semiconductor Manufacturing,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1032,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,
+YAHOO,TXN,TXN,Texas Instruments,Texas Instruments,index_constituent,sox_components,Semiconductors,Semiconductors,Global,USD,^SOX,adjusted,,,,,,,Index/Price,,FALSE,FALSE,TRUE,1033,analysis_group=sox_constituents;price_basis=adjusted_close;gate4=TRUE,,,,,,,,,

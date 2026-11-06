@@ -1,0 +1,9 @@
+metric_group,rows,metrics,start_date,end_date
+credit_spread,19867,3,1998-11-13,2026-11-04
+data_quality,18,18,2026-11-02,2026-11-05
+funding_spread,19909,3,1999-05-06,2026-11-04
+fx_rate_link,12348,2,2000-12-18,2026-11-03
+kr_us_spread,60672,7,1998-11-13,2026-11-04
+rate_change,85,85,2026-11-02,2026-11-04
+rolling_correlation,40398,6,1998-11-17,2026-11-04
+yield_curve,32,32,2026-10-02,2026-11-04

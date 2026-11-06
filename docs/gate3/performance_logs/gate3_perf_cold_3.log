@@ -1,0 +1,55 @@
+Loading required package: shiny
+Warning: package 'shiny' was built under R version 4.5.3
+Warning: package 'fst' was built under R version 4.5.3
+Warning: package 'dplyr' was built under R version 4.5.3
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning: package 'lubridate' was built under R version 4.5.3
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Warning: package 'DT' was built under R version 4.5.3
+
+Attaching package: 'DT'
+
+The following objects are masked from 'package:shiny':
+
+    dataTableOutput, renderDataTable
+
+Warning: package 'ggplot2' was built under R version 4.5.3
+Warning: package 'plotly' was built under R version 4.5.3
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+Warning: package 'tidyr' was built under R version 4.5.3
+Warning: package 'viridis' was built under R version 4.5.3
+Loading required package: viridisLite
+Warning: package 'readr' was built under R version 4.5.3
+
+Listening on http://127.0.0.1:5603
+Warning: package 'fstcore' was built under R version 4.5.3

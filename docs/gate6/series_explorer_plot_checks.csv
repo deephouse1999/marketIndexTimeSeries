@@ -1,0 +1,3 @@
+check,actual,result
+raw_source_line_trace,526 rows; range=2.02,PASS
+monthly_return_distribution,1,PASS

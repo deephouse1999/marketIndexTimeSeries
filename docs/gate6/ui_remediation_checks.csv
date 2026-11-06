@@ -1,0 +1,10 @@
+check,result
+breadth_has_visible_bar_data,PASS
+value_chain_has_visible_bar_data,PASS
+korea_link_uses_kospi,PASS
+korea_link_has_line_data,PASS
+contribution_has_ticker_click_payload,PASS
+contribution_description_output,PASS
+cumulative_chart_has_line_data,PASS
+spread_chart_has_line_data,PASS
+rolling_chart_has_line_data,PASS

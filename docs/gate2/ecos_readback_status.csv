@@ -1,0 +1,8 @@
+checked_at,step,status,detail
+2026-11-05 14:20:35 KST,ECOS_API_KEY,KEY_BOUND,Environment variable is bound; value not logged
+2026-11-05 14:20:35 KST,StatisticTableList,PASS,844 rows
+2026-11-05 14:20:35 KST,StatisticMeta,PASS,53 rows
+2026-11-05 14:20:36 KST,StatisticItemList:722Y001,PASS,48 rows
+2026-11-05 14:20:37 KST,StatisticItemList:817Y002,PASS,27 rows
+2026-11-05 14:20:38 KST,StatisticItemList:731Y001,PASS,53 rows
+2026-11-05 14:20:38 KST,ITEM_SNAPSHOT_WRITE,PASS,128 official item rows; 73 target-name candidates

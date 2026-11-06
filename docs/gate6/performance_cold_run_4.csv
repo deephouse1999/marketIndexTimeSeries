@@ -1,0 +1,2 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,app_startup_seconds,measurement_method
+browser_cold_4,cold_initial_visible_render,2026-11-06 21:26:33 KST,2026-11-06 21:26:33 KST,0.06380391120910645,fresh_r_process_and_browser,status+benchmark,PASS,3.0937846,CHROMIUM_DOM_VISIBLE_RENDER

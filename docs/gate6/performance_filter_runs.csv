@@ -1,0 +1,11 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,app_startup_seconds,measurement_method
+browser_filter_1,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.07899689674377441,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_2,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.0726780891418457,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_3,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.07266521453857422,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_4,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.0830080509185791,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_5,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.0823209285736084,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_6,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.06986784934997559,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_7,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.06392908096313477,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_8,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.07015109062194824,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_9,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.07302498817443848,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_10,filter_visible_response,2026-11-06 21:26:53 KST,2026-11-06 21:26:53 KST,0.07248520851135254,warm_browser_session,Korea Link Plotly,PASS,3.1135377,CHROMIUM_DOM_VISIBLE_RENDER

@@ -1,0 +1,4 @@
+"date","series_id","display_name","close_value","adjusted_value","effective_value","volume","source"
+2026-01-01,"A679RC1Q027SBEA","AI Capex Proxy",1586.328,,1586.328,,"FRED"
+2026-04-01,"A679RC1Q027SBEA","AI Capex Proxy",1645.684,,1645.684,,"FRED"
+2026-07-01,"A679RC1Q027SBEA","AI Capex Proxy",1765.37,,1765.37,,"FRED"

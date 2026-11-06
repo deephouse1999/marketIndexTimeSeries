@@ -1,0 +1,2 @@
+date,expected_members,available_members,expected_weight_total,available_weight,weight_coverage,complete
+2026-11-05,30,30,0.99979655,0.99979655,1,TRUE

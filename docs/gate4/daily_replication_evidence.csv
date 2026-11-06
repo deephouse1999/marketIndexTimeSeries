@@ -1,0 +1,2 @@
+date,member_count,advancing,declining,unchanged,breadth_pct,equal_weight_return,proxy_weighted_return,top5_concentration,top10_concentration,sox_return,residual_return,quality_flag
+2026-11-05,30,0,30,0,0,-0.12627755802084617,-0.12245743437300004,0.4000187,0.61327752,-0.12246167464661784,-4.240273617797663e-6,SOXQ_PROXY_COMPLETE_PREVIOUS_SNAPSHOT

@@ -1,0 +1,11 @@
+run_id,test_type,started_at,completed_at,elapsed_seconds,cache_state,visible_outputs,result,app_startup_seconds,measurement_method
+browser_filter_1,filter_visible_response,2026-11-06 15:37:31 KST,2026-11-06 15:37:31 KST,0.08154010772705078,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_2,filter_visible_response,2026-11-06 15:37:31 KST,2026-11-06 15:37:32 KST,0.07601714134216309,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_3,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07267308235168457,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_4,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07256102561950684,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_5,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07098197937011719,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_6,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07285904884338379,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_7,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07238197326660156,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_8,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07141995429992676,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_9,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.072795867919921875,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER
+browser_filter_10,filter_visible_response,2026-11-06 15:37:32 KST,2026-11-06 15:37:32 KST,0.07069897651672363,warm_browser_session,Korea Link Plotly,PASS,2.6344816,CHROMIUM_DOM_VISIBLE_RENDER

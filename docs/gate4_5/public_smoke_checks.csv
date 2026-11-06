@@ -1,0 +1,26 @@
+check_id,actual,result
+public_shiny_connected,TRUE,PASS
+public_gate_tabs,"Market Time Series
+Sector Rotation
+Series Explorer
+Korea Rates & Funding
+SOX Constituents
+Semiconductor & Korea Link",PASS
+public_physical_navigation,TRUE/TRUE/TRUE,PASS
+public_physical_metadata,"Korea DRAM Producer Price Index reference month 2026-09 | Conservative availability (collected) 2026-11-06 21:02:28 KST | Source Bank of Korea ECOS | Frequency / unit monthly 2020=100 | Quality VERIFIED_SOURCE
+Korea Flash Memory Producer Price Index reference month 2026-09 | Conservative availability (collected) 2026-11-06 21:02:29 KST | Source Bank of Korea ECOS | Frequency / unit monthly 2020=100 | Quality VERIFIED_SOURCE",PASS
+public_physical_semantics,TRUE,PASS
+public_dram_plot,121,PASS
+public_flash_plot,121,PASS
+public_bwet_visible,"Show 
+10
+25
+50
+100
+ entries
+Search:
+source	series_id	display_name	CurrentBasisDy	current_value	YTD	PeriodReturn	DoD	CurrentDrawdown	MaxDrawdown
+YAHOO	BWET_VLCC_PROXY	Tanker Freight Futures ETF Proxy (BWET)	2026-11-05	669.89	3476.5618	6676.8336	-3.1392	-33.85	-41.22
+Showing 1 to 1 of 1 entries
+Previous1Next",PASS
+public_bwet_proxy_warning,"Proxy definition: BWET is a tanker-freight futures ETF market-price proxy. It is not a VLCC spot rate or an official Baltic freight index. Returns may include futures roll, management fees, and tracking error.",PASS

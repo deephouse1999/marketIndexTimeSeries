@@ -1,0 +1,4 @@
+checked_at,test,status,detail
+2026-11-05 14:16:23 KST,recent_sample,PASS,102 rows across 3 series
+2026-11-05 14:16:23 KST,pagination,PASS,6931 rows with 0 duplicate keys
+2026-11-05 14:16:23 KST,future_unpublished,PENDING_SOURCE,No fabricated observation; response classified without publication
